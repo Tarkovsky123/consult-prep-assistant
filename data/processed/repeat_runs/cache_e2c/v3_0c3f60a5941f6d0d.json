@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 12.3,
+ "result": {
+  "type_no": "21",
+  "type_reason": "미취업 청년의 면접 준비비용을 상품권으로 지급하는 사업으로, 21번 미취업 청년 면접 준비비에 해당한다.",
+  "type_evidence": "양산시 청년 면접 준비비용 지원사업",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "양산시 관내 거주 미취업 청년 중 부산, 울산, 경남 업체 면접 응시자",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

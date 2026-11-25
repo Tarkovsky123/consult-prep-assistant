@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 14.2,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "육아휴직 대체인력으로 채용된 근로자에게 지급하는 지원금에 해당하는 유형이 없다. 26번 근속장려나 27번 사업주 대상 채용지원과는 지원 명목 또는 수급자가 다르다.",
+  "type_evidence": "[지원내용] 전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자에게 최대 6개월까지 200만원 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": "전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자에게 최대 6개월까지 200만원 지원",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

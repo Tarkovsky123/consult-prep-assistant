@@ -1,0 +1,77 @@
+{
+ "backend": "codex",
+ "sec": 26.4,
+ "result": {
+  "target": "파주시에 1년 이상 주민등록을 두고 거주한 65세 이상 『국민기초생활보장법』에 따른 기초생활수급자 및 차상위 계층자『장애인복지법』에 따른 장애의 정도가 심한 장애인『국가유공자 등 예우 및 지원에 관한 법률』에 따른 국가유공자",
+  "content": "대상포진 예방접종",
+  "criteria": "파주시에 1년 이상 주민등록을 두고 거주하는 65세 이상     『국민기초생활보장법』에 따른 기초생활수급자 및 차상위 계층자",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "파주시에 1년 이상 주민등록을 두고 거주한",
+  "item": {
+   "id": "P",
+   "life": [
+    "노년"
+   ],
+   "age_min": 65,
+   "age_max": null,
+   "age_evidence": "65세 이상",
+   "household": [
+    "저소득",
+    "장애인",
+    "보훈대상자"
+   ],
+   "income_type": "차상위",
+   "income_median_pct": null,
+   "income_evidence": "기초생활수급자 및 차상위 계층자",
+   "region_type": "거주지한정",
+   "region_name": "파주시",
+   "region_evidence": "파주시에 1년 이상 주민등록을 두고 거주한",
+   "support_form": [
+    "서비스"
+   ],
+   "conditions": [
+    {
+     "text": "파주시에 1년 이상 주민등록을 두고 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "파주시에 1년 이상 주민등록을 두고 거주한"
+    },
+    {
+     "text": "65세 이상",
+     "join": "AND",
+     "exception": false,
+     "evidence": "65세 이상"
+    },
+    {
+     "text": "기초생활수급자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "『국민기초생활보장법』에 따른 기초생활수급자"
+    },
+    {
+     "text": "차상위 계층자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "차상위 계층자"
+    },
+    {
+     "text": "장애의 정도가 심한 장애인",
+     "join": "OR",
+     "exception": false,
+     "evidence": "『장애인복지법』에 따른 장애의 정도가 심한 장애인"
+    },
+    {
+     "text": "국가유공자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "『국가유공자 등 예우 및 지원에 관한 법률』에 따른 국가유공자"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "income_median_pct"
+   ]
+  }
+ }
+}

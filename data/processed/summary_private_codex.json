@@ -1,0 +1,52 @@
+{
+  "source": "private",
+  "backend": "codex",
+  "rows": 335,
+  "structured": 335,
+  "missing_from_model": 0,
+  "evidence_all_verified": 1.0,
+  "conditions_total": 1272,
+  "conditions_with_or": 0.424,
+  "conditions_with_exception": 0.251,
+  "income_type": {
+    "미상": 199,
+    "기타소득기준": 93,
+    "중위소득기준": 26,
+    "차상위": 8,
+    "소득무관": 6,
+    "기초생활수급": 3
+  },
+  "income_stated": 0.406,
+  "income_median_pct_values": {
+    "80": 8,
+    "100": 5,
+    "150": 4,
+    "72": 1,
+    "130": 1,
+    "60": 1,
+    "75": 1,
+    "125": 1,
+    "180": 1,
+    "120": 1,
+    "70": 1
+  },
+  "region_type": {
+    "미상": 296,
+    "거주지한정": 24,
+    "지역무관": 15
+  },
+  "age_range_stated": 0.197,
+  "support_form": {
+    "현금": 173,
+    "서비스": 169,
+    "현물": 68,
+    "바우처·이용권": 9,
+    "감면": 7,
+    "융자": 3,
+    "기타": 3
+  },
+  "life_differs_from_tag": 0.54,
+  "household_differs_from_tag": 0.379,
+  "tag_life_empty": 0.316,
+  "sec_per_item_mean": 3.9
+}

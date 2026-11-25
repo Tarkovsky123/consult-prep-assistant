@@ -1,0 +1,78 @@
+{
+ "backend": "codex",
+ "sec": 35.3,
+ "result": {
+  "target": "거제시에 주소를 두고 1년 이상 거주한 65세 이상 어르신 중 대상포진 접종 이력이 없는 자",
+  "content": "대상포진 예방접종비용 지원(최대 10만원 이내)   - 65세 일반(사백신 *백신단가 36만원): 1차 5만원, 2차 5만원 지원  - 65세 기초생활수급자(생백신 *백신단가 9만원): 무료",
+  "criteria": "거제시에 주소를 두고 1년 이상 거주한 65세 이상 어르신 중 대상포진 접종 이력이 없는 자생백신 대상자 : 기초생활 수급자 50명사백신 대상자 : 그 외 시민 350명",
+  "amount_won": 100000,
+  "cycle": "1회",
+  "region": "거제시에 주소를 두고 1년 이상 거주한",
+  "item": {
+   "id": "P",
+   "life": [
+    "노년"
+   ],
+   "age_min": 65,
+   "age_max": null,
+   "age_evidence": "65세 이상",
+   "household": [
+    "저소득"
+   ],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "거제시",
+   "region_evidence": "거제시에 주소를 두고 1년 이상 거주한",
+   "support_form": [
+    "현금",
+    "서비스"
+   ],
+   "conditions": [
+    {
+     "text": "거제시에 주소를 두고 있어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "거제시에 주소를 두고"
+    },
+    {
+     "text": "1년 이상 거주해야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "1년 이상 거주한"
+    },
+    {
+     "text": "65세 이상이어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "65세 이상 어르신"
+    },
+    {
+     "text": "대상포진 접종 이력이 없어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "대상포진 접종 이력이 없는 자"
+    },
+    {
+     "text": "생백신 대상자는 기초생활 수급자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "생백신 대상자 : 기초생활 수급자 50명"
+    },
+    {
+     "text": "사백신 대상자는 그 외 시민",
+     "join": "OR",
+     "exception": false,
+     "evidence": "사백신 대상자 : 그 외 시민 350명"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

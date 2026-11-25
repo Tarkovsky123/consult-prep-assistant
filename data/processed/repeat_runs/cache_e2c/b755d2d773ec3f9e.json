@@ -1,0 +1,69 @@
+{
+ "backend": "codex",
+ "sec": 28.2,
+ "result": {
+  "target": "지급기준일 현재 주민등록상 의령군에 거주하는 70세 이상인 사람다만, 사회복지시설 또는 장기요양시설에 입소 중인 사람은 제외",
+  "content": "지원금은 1매당 5천원반기별 8매 지급(1년 8만 원)",
+  "criteria": "지급기준일 현재 주민등록상 의령군에 거주하는 70세 이상인 사람다만, 사회복지시설 또는 장기요양시설에 입소 중인 사람은 제외전입 또는 연령 등의 사유로 지원 대상자에 해당되는 때에는 그 사유가 발생한 날의 다음 반기부터 지원",
+  "amount_won": 80000,
+  "cycle": "연",
+  "region": "지급기준일 현재 주민등록상 의령군에 거주하는",
+  "item": {
+   "id": "P",
+   "life": [
+    "노년"
+   ],
+   "age_min": 70,
+   "age_max": null,
+   "age_evidence": "70세 이상인 사람",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "의령군",
+   "region_evidence": "지급기준일 현재 주민등록상 의령군에 거주하는",
+   "support_form": [],
+   "conditions": [
+    {
+     "text": "지급기준일 현재 주민등록상 의령군 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "지급기준일 현재 주민등록상 의령군에 거주하는"
+    },
+    {
+     "text": "70세 이상",
+     "join": "AND",
+     "exception": false,
+     "evidence": "70세 이상인 사람"
+    },
+    {
+     "text": "사회복지시설 입소 중인 사람 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "사회복지시설 또는 장기요양시설에 입소 중인 사람은 제외"
+    },
+    {
+     "text": "장기요양시설 입소 중인 사람 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "사회복지시설 또는 장기요양시설에 입소 중인 사람은 제외"
+    },
+    {
+     "text": "전입 또는 연령 등의 사유로 지원 대상자가 되면 사유 발생일의 다음 반기부터 지원",
+     "join": "AND",
+     "exception": false,
+     "evidence": "그 사유가 발생한 날의 다음 반기부터 지원"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "support_form"
+   ]
+  }
+ }
+}

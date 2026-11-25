@@ -1,0 +1,51 @@
+{
+ "backend": "codex",
+ "sec": 18.7,
+ "result": {
+  "target": "광주광역시 관내 국,공,사립 중,고등학교에 재학중인 학생",
+  "content": "꿈드리미 체크카드에 바우처 포인트 지급",
+  "criteria": "광주광역시 관내 국,공,사립 중,고등학교에 재학중인 학생",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [
+    "청소년"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [
+    "바우처·이용권"
+   ],
+   "conditions": [
+    {
+     "text": "광주광역시 관내 국,공,사립 중,고등학교 재학",
+     "join": "AND",
+     "exception": false,
+     "evidence": "광주광역시 관내 국,공,사립 중,고등학교에 재학중인 학생"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_type",
+    "region_name",
+    "region_evidence"
+   ]
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "backend": "codex",
+ "sec": 27.4,
+ "result": {
+  "target": "함평군에 1년이상 주소지(주민등록상)를 둔 연 나이 60세 이상 함평군민 (단, 과거 대상포진 접종 이력이 있는 경우는 제외)",
+  "content": "❍ 기존대상 : 연 나이 50세 이상 함평군민 백신원가로 접종❍ 확대대상 : 함평군에 1년이상 주소지(주민등록상)를 둔 연 나이 60세 이상 함평군민 (단, 과거 대상포진 접종 이력이 있는 경우는 제외) 2만원으로 접종 (약 6만원정도 지원)",
+  "criteria": "❍ 기존대상 : 연 나이 50세 이상 함평군민 백신원가로 접종❍ 확대대상 : 함평군에 1년이상 주소지(주민등록상)를 둔 연 나이 60세 이상 함평군민 (단, 과거 대상포진 접종 이력이 있는 경우는 제외) 2만원으로 접종",
+  "amount_won": 60000,
+  "cycle": "미상",
+  "region": "함평군에 1년이상 주소지(주민등록상)를 둔",
+  "item": {
+   "id": "P",
+   "life": [
+    "중장년",
+    "노년"
+   ],
+   "age_min": 50,
+   "age_max": null,
+   "age_evidence": "기존대상 : 연 나이 50세 이상 함평군민",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "함평군",
+   "region_evidence": "함평군에 1년이상 주소지(주민등록상)를 둔",
+   "support_form": [
+    "감면"
+   ],
+   "conditions": [
+    {
+     "text": "기존대상: 연 나이 50세 이상 함평군민",
+     "join": "OR",
+     "exception": false,
+     "evidence": "기존대상 : 연 나이 50세 이상 함평군민"
+    },
+    {
+     "text": "확대대상: 함평군에 주민등록상 주소지를 1년 이상 둔 연 나이 60세 이상 함평군민",
+     "join": "OR",
+     "exception": false,
+     "evidence": "함평군에 1년이상 주소지(주민등록상)를 둔 연 나이 60세 이상 함평군민"
+    },
+    {
+     "text": "확대대상 중 과거 대상포진 접종 이력이 있는 경우 제외",
+     "join": "AND",
+     "exception": true,
+     "evidence": "단, 과거 대상포진 접종 이력이 있는 경우는 제외"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

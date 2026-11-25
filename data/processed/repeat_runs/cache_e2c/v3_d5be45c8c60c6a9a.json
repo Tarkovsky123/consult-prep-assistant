@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 14.0,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "육아휴직 대체인력으로 채용된 근로자에게 지급하는 지원금과 급여 항목이 같은 유형이 없다. 26번은 근속장려금, 27번은 사업주에게 지급하는 채용 지원금으로 사업안과 다르다.",
+  "type_evidence": "전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자에게 최대 6개월까지 200만원 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": "전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자에게 최대 6개월까지 200만원 지원",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

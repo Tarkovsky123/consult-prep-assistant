@@ -1,0 +1,65 @@
+{
+ "backend": "codex",
+ "sec": 23.0,
+ "result": {
+  "target": "상속채무로 인하여 법률지원이 필요한 군산시에 주민등록상 주소를 둔 24세 이하인 아동청소년으로 상속포기 및 한정 승인 등 법률지원이 필요한 자",
+  "content": "법률지원서비스를 진행한 기관에 직접 제공(시->법률지원 기관)",
+  "criteria": "지원대상 : 군산시에 주민등록을 둔 24세이하 아동청소년으로 상속포기 및 한정승인 등 법률 지원이 필요한 자 단, 다른법령 등에 따라 법률 지원에 소요되는 비용을 지급받는 경우 제외(대한법률구조공단 법률지원서비스 우선 신청 및 이용 연계)",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "군산시에 주민등록상 주소를 둔",
+  "item": {
+   "id": "P",
+   "life": [
+    "아동",
+    "청소년"
+   ],
+   "age_min": null,
+   "age_max": 24,
+   "age_evidence": "24세 이하인 아동청소년",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "군산시",
+   "region_evidence": "군산시에 주민등록상 주소를 둔",
+   "support_form": [
+    "서비스"
+   ],
+   "conditions": [
+    {
+     "text": "군산시에 주민등록상 주소를 둔 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "군산시에 주민등록상 주소를 둔"
+    },
+    {
+     "text": "24세 이하인 아동청소년",
+     "join": "AND",
+     "exception": false,
+     "evidence": "24세 이하인 아동청소년"
+    },
+    {
+     "text": "상속채무로 인하여 상속포기 및 한정승인 등 법률지원이 필요한 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "상속채무로 인하여 법률지원이 필요한"
+    },
+    {
+     "text": "다른 법령 등에 따라 법률지원 비용을 지급받는 경우 제외",
+     "join": "AND",
+     "exception": true,
+     "evidence": "다른법령 등에 따라 법률 지원에 소요되는 비용을 지급받는 경우 제외"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

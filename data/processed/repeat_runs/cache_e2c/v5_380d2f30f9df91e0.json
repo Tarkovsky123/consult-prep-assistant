@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 12.1,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 노인 이미용비·목욕비로, 유형목록에 같은 급여 항목이나 목적과 대상이 같은 가까운 유형이 없다.",
+  "type_evidence": "의령군 노인 이미용비 및 목욕비 지원 사업",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "일반행정·생활편의",
+  "exclude_evidence": "의령군 노인 이미용비 및 목욕비 지원 사업",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

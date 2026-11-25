@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 11.6,
+ "result": {
+  "type_no": "49",
+  "type_reason": "난임부부에게 지급하는 교통비로, 난임부부를 대상에 포함한 49번 임산부 교통비에 해당한다.",
+  "type_evidence": "난임부부 교통비지원사업",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "신속협의 유형 49번에 해당하여 협의대상",
+  "exclude_evidence": "난임부부 교통비지원사업",
+  "target_in": "안",
+  "target_evidence": "[지원대상] 남해군에 주민등록을 둔 난임부부(사실혼 포함)",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 13.3,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "농어촌버스 무료 이용을 지원하는 유형은 목록에 없다. 47번은 택시 이용 지원으로 급여 항목이 달라 해당하지 않는다.",
+  "type_evidence": "[지원내용] 어르신 교통복지카드를 지급 및 사용(월 20회 한도 농어촌버스 무료 이용 지원)",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "이동권·접근성",
+  "exclude_evidence": "[지원내용] 어르신 교통복지카드를 지급 및 사용(월 20회 한도 농어촌버스 무료 이용 지원)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 14.4,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "유치원 유아학비·무상교육비 지원에 해당하는 급여 항목이 유형목록에 없다. 15번 교육·문화 바우처는 학령기 아동·청소년 대상이므로 목적과 대상이 같은 가까운 유형으로 보기 어렵다.",
+  "type_evidence": "[지원내용] 1. 추가지원금- 공사립 3~5세 외국국적 유아: 월5만원2. 무상교육비-공립 4~5세 외국국적 유아: 월2만원-사립 4~5세 외국국적 유아: 월11만원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "기타 특정대상 — 외국인 대상 사업",
+  "exclude_evidence": "[선정기준] - 국·공립 및 사립유치원에 다니는 외국국적 3～5세 유아(등록 외국인에 한하여 지원)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

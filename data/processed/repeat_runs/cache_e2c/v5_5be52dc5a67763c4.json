@@ -1,0 +1,20 @@
+{
+ "backend": "codex",
+ "sec": 14.3,
+ "result": {
+  "type_no": "22",
+  "type_reason": "응시료 실비 지원으로 22번과 급여 항목이 같고, 원문상 대상도 미취업 청년이다. 사업명에는 중장년으로 적혀 있으나 구체적인 지원대상·선정기준을 기준으로 골랐다.",
+  "type_evidence": "당해 연도에 응시한 어학시험, 한국사시험, 국가자격시험, 국가공인자격시험 응시료 지원",
+  "alt_types": [
+   "24"
+  ],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "신청일 기준 19세 ~ 39세 청년(제대군인 의무복무 기간에 따라 최대 3년 연장)- 2026년 1월 1일 이전부터 신청일까지 계속하여 양천구에 주민등록상 주소지를 두고 있는 자- 신청일 현재 미취업자 및 사업자 등록사실이 없는 자",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "backend": "codex",
+ "sec": 26.7,
+ "result": {
+  "target": "여수시 관내 주택에 주민등록을 두고 거주 중인 무주택 신혼부부",
+  "content": "전세대출 실제 이자납부액 기준 월 최대 15만원 이내",
+  "criteria": "주민등록 : 부부 1인 이상 해당 주택 거주, 부부 모두 여수시 거주혼인기준 : 혼인신고 7년 이내소득기준 : 부부 합산 연소득 1억원 이하주택기준 : 전용면적 85제곱미터 이하 주택",
+  "amount_won": 150000,
+  "cycle": "월",
+  "region": "여수시 관내 주택에 주민등록을 두고 거주 중인",
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [
+    "기타"
+   ],
+   "income_type": "기타소득기준",
+   "income_median_pct": null,
+   "income_evidence": "부부 합산 연소득 1억원 이하",
+   "region_type": "거주지한정",
+   "region_name": "여수시",
+   "region_evidence": "부부 모두 여수시 거주",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "여수시 관내 주택에 주민등록을 두고 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "여수시 관내 주택에 주민등록을 두고 거주 중인"
+    },
+    {
+     "text": "무주택 신혼부부",
+     "join": "AND",
+     "exception": false,
+     "evidence": "무주택 신혼부부"
+    },
+    {
+     "text": "부부 1인 이상 해당 주택 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부부 1인 이상 해당 주택 거주"
+    },
+    {
+     "text": "부부 모두 여수시 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부부 모두 여수시 거주"
+    },
+    {
+     "text": "혼인신고 7년 이내",
+     "join": "AND",
+     "exception": false,
+     "evidence": "혼인신고 7년 이내"
+    },
+    {
+     "text": "부부 합산 연소득 1억원 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부부 합산 연소득 1억원 이하"
+    },
+    {
+     "text": "전용면적 85제곱미터 이하 주택",
+     "join": "AND",
+     "exception": false,
+     "evidence": "전용면적 85제곱미터 이하 주택"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "income_median_pct"
+   ]
+  }
+ }
+}

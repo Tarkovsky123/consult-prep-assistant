@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 13.9,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 입원·외래진료·건강검진 기간의 생활비로, 같은 급여 항목의 유형이 없다. 51번 건강검진비나 55번 간병비와는 지원하는 비용의 종류가 다르다.",
+  "type_evidence": "ㅇ입원, 입원연계 외래진료, 국가 일반건강검진(1차) 시 연 최대 14일 생활비를 지원합니다.",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 13.4,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 대상포진 예방접종비용으로, 신속협의 유형목록에 같은 급여 항목이 없다.",
+  "type_evidence": "대상포진 예방접종비용 지원(최대 10만원 이내)",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "국가적 피해자·재난 예방",
+  "exclude_evidence": "대상포진 예방접종비용 지원(최대 10만원 이내)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

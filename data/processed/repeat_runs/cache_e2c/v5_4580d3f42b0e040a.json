@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 13.0,
+ "result": {
+  "type_no": "37",
+  "type_reason": "전세자금 대출이자를 지원하므로 37번과 급여 항목이 같다. 대상도 기준중위소득 180% 이하 청년에 해당한다.",
+  "type_evidence": "[지원내용] 2026년 1월 이후 본인이 납입한 대출이자의 50% 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "논산시에 주소를 두고 전세자금 대출을 이용 중인 청년 중 아래의 조건을 모두 만족하는 만19세 이상 ~ 45세 이하 자 1. 무주택 세대주이면서 세대원(배우자 및 자녀) 전원 무주택자 2. 가구소득인정액이 기준중위소득 180%* 이하인 청년",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

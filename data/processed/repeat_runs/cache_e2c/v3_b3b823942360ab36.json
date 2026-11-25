@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 13.0,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 대상포진 예방접종이며, 유형목록에 예방접종 지원과 같은 급여 항목의 유형이 없다.",
+  "type_evidence": "[지원내용] 대상포진 예방접종",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "국가적 피해자·재난 예방",
+  "exclude_evidence": "[지원내용] 대상포진 예방접종",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

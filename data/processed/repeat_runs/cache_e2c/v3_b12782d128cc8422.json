@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 12.4,
+ "result": {
+  "type_no": "29",
+  "type_reason": "플랫폼 배달노동자의 본인부담 산재보험료 지원이므로 29번에 해당한다. 지원율 90%는 유형의 상한 80%를 초과하지만 유형 선택과 대상 범위 판단에는 영향을 주지 않는다.",
+  "type_evidence": "배달업 종사 노동자의 본인부담 산재보험료 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "18세 이상 플랫폼 배달 노동자로서 영등포구에 주소를 둔 근로자 또는 영등포구에 소재지를 둔 사업장 종사 근로자",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

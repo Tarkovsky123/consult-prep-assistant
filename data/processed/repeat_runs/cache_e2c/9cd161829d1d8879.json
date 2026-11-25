@@ -1,0 +1,65 @@
+{
+ "backend": "codex",
+ "sec": 20.7,
+ "result": {
+  "target": "부모의 맞벌이 등으로 양육공백이 발생한 가정의 만 12세 이하 아동",
+  "content": "-아이돌봄서비스 소득기준 유형에 따라 본인부담금 50% 지원-본인부담금 선납 이용 후 익월 환급",
+  "criteria": "영동군에 주민등록을 둔 영동군 아이돌봄서비스 이용가구",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "영동군에 주민등록을 둔",
+  "item": {
+   "id": "P",
+   "life": [
+    "영유아",
+    "아동"
+   ],
+   "age_min": null,
+   "age_max": 12,
+   "age_evidence": "만 12세 이하 아동",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "영동군",
+   "region_evidence": "영동군에 주민등록을 둔",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "부모의 맞벌이 등으로 양육공백이 발생한 가정",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부모의 맞벌이 등으로 양육공백이 발생한 가정"
+    },
+    {
+     "text": "만 12세 이하 아동",
+     "join": "AND",
+     "exception": false,
+     "evidence": "만 12세 이하 아동"
+    },
+    {
+     "text": "영동군에 주민등록",
+     "join": "AND",
+     "exception": false,
+     "evidence": "영동군에 주민등록을 둔"
+    },
+    {
+     "text": "영동군 아이돌봄서비스 이용가구",
+     "join": "AND",
+     "exception": false,
+     "evidence": "영동군 아이돌봄서비스 이용가구"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

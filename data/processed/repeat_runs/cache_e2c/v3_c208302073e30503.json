@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 13.4,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "지원 항목은 한의약 첩약 치료비로, 1번의 체외수정·인공수정 시술비와 다르다. 목록에 같은 급여 항목의 유형이 없다.",
+  "type_evidence": "[지원내용] 지정한의원 첩약 치료비용의 본인부담금 10% 직접 결제90%(120만원)는 지정한의원에서 보건소로 의료비 청구",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

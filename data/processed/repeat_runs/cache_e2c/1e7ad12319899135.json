@@ -1,0 +1,65 @@
+{
+ "backend": "codex",
+ "sec": 31.0,
+ "result": {
+  "target": "원인불명의 난임을 진단받은 부부(사실혼 부부 포함)",
+  "content": "지정한의원 첩약 치료비용의 본인부담금 10% 직접 결제90%(120만원)는 지정한의원에서 보건소로 의료비 청구",
+  "criteria": "- 원인불명의 난임 진단자 (N979)- 여성 나이 기준 없음- 신청일 기준 부부 한 명 이상이 대한민국 국적이면서 주민등록상 관악구민- 소득, 재산 기준 없음",
+  "amount_won": 1200000,
+  "cycle": "미상",
+  "region": "신청일 기준 부부 한 명 이상이 대한민국 국적이면서 주민등록상 관악구민",
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": "여성 나이 기준 없음",
+   "household": [],
+   "income_type": "소득무관",
+   "income_median_pct": null,
+   "income_evidence": "소득, 재산 기준 없음",
+   "region_type": "거주지한정",
+   "region_name": "관악구",
+   "region_evidence": "신청일 기준 부부 한 명 이상이 대한민국 국적이면서 주민등록상 관악구민",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "원인불명의 난임을 진단받은 부부이며 사실혼 부부도 포함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "원인불명의 난임을 진단받은 부부(사실혼 부부 포함)"
+    },
+    {
+     "text": "원인불명의 난임 진단코드 N979",
+     "join": "AND",
+     "exception": false,
+     "evidence": "원인불명의 난임 진단자 (N979)"
+    },
+    {
+     "text": "신청일 기준 부부 중 최소 한 사람이 대한민국 국적과 주민등록상 관악구 거주 요건을 모두 충족",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 기준 부부 한 명 이상이 대한민국 국적이면서 주민등록상 관악구민"
+    },
+    {
+     "text": "여성 나이 제한 없음",
+     "join": "AND",
+     "exception": false,
+     "evidence": "여성 나이 기준 없음"
+    },
+    {
+     "text": "소득 및 재산 제한 없음",
+     "join": "AND",
+     "exception": false,
+     "evidence": "소득, 재산 기준 없음"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "household"
+   ]
+  }
+ }
+}

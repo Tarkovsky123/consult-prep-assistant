@@ -1,0 +1,66 @@
+{
+ "backend": "codex",
+ "sec": 23.6,
+ "result": {
+  "target": "18세 이상 플랫폼 배달 노동자로서 영등포구에 주소를 둔 근로자 또는 영등포구에 소재지를 둔 사업장 종사 근로자",
+  "content": "2026년 산재보험료 납부액의 90% 지원 (인당 10만원 한도)",
+  "criteria": "18세 이상 서울특별시 영등포구 주소를 둔 배달업 종사 노동자 및 영등포구에 소재지를 둔 사업장에 종사하는 배달업 종사 노동자의 본인부담 산재보험료 지원",
+  "amount_won": 100000,
+  "cycle": "미상",
+  "region": "영등포구에 주소를 둔",
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": 18,
+   "age_max": null,
+   "age_evidence": "18세 이상",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "18세 이상",
+     "join": "AND",
+     "exception": false,
+     "evidence": "18세 이상"
+    },
+    {
+     "text": "플랫폼 배달 노동자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "플랫폼 배달 노동자"
+    },
+    {
+     "text": "영등포구에 주소를 둔 근로자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "영등포구에 주소를 둔 근로자"
+    },
+    {
+     "text": "영등포구에 소재지를 둔 사업장 종사 근로자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "영등포구에 소재지를 둔 사업장 종사 근로자"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_max",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_type",
+    "region_name",
+    "region_evidence"
+   ]
+  }
+ }
+}

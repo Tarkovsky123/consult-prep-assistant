@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 15.2,
+ "result": {
+  "type_no": "15",
+  "type_reason": "학령기 아동·청소년 대상 바우처로 15번이 가장 가깝다. 다만 교육·문화 용처와 입시 과목 수강 제한이 명시되지 않아 급여 항목의 일치 여부는 담당자 확인이 필요하다.",
+  "type_evidence": "횡성군 청소년 희망채움 바우처 지원사업",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": "확인불가",
+  "target_evidence": "[지원대상] 횡성군에 주소를 둔 초4 ~ 고4 (2026년 기준)\n[선정기준] 횡성군에 주소를 둔 청소년 초 4~ 고3\n[지원내용] 초 3만원 중 5만원 고 7만원",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "가까움"
+ }
+}

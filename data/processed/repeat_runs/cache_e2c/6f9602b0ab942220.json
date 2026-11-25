@@ -1,0 +1,77 @@
+{
+ "backend": "codex",
+ "sec": 27.3,
+ "result": {
+  "target": "순천시에 1년 이상 주민등록을 두고 거주하는 55세 이상 시민",
+  "content": "대상포진 예방접종 백신 지원",
+  "criteria": "1. 순천시에 1년 이상 주민등록을 두고 거주하는 55세 이상 시민2. 대상포진 확진자는 1년 경과 후 접종 가능 3. 생백신 금기(면역저하자 등)에 해당하는 자는 사백신으로 접종 가능4. 보건소 대상포진 예방접종(생백신 또는 사백신)은 1회만 지원 가능5. 일반의료기관에서 생백신 접종 후 5년이 경과한 자는 사백신 접종 가능",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "순천시에 1년 이상 주민등록을 두고 거주하는",
+  "item": {
+   "id": "P",
+   "life": [
+    "중장년",
+    "노년"
+   ],
+   "age_min": 55,
+   "age_max": null,
+   "age_evidence": "55세 이상 시민",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "순천시",
+   "region_evidence": "순천시에 1년 이상 주민등록을 두고 거주하는",
+   "support_form": [
+    "현물"
+   ],
+   "conditions": [
+    {
+     "text": "순천시에 1년 이상 주민등록을 두고 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "순천시에 1년 이상 주민등록을 두고 거주하는"
+    },
+    {
+     "text": "55세 이상 시민",
+     "join": "AND",
+     "exception": false,
+     "evidence": "55세 이상 시민"
+    },
+    {
+     "text": "대상포진 확진자는 1년 경과 후 접종 가능",
+     "join": "AND",
+     "exception": true,
+     "evidence": "대상포진 확진자는 1년 경과 후 접종 가능"
+    },
+    {
+     "text": "생백신 금기에 해당하는 자는 사백신으로 접종 가능",
+     "join": "AND",
+     "exception": true,
+     "evidence": "생백신 금기(면역저하자 등)에 해당하는 자는 사백신으로 접종 가능"
+    },
+    {
+     "text": "보건소 대상포진 예방접종은 생백신 또는 사백신 중 1회만 지원 가능",
+     "join": "AND",
+     "exception": false,
+     "evidence": "보건소 대상포진 예방접종(생백신 또는 사백신)은 1회만 지원 가능"
+    },
+    {
+     "text": "일반의료기관에서 생백신 접종 후 5년이 경과한 자는 사백신 접종 가능",
+     "join": "AND",
+     "exception": true,
+     "evidence": "일반의료기관에서 생백신 접종 후 5년이 경과한 자는 사백신 접종 가능"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

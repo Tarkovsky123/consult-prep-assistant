@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 19.2,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "고용보험 출산휴가급여를 받지 못하는 소득활동 여성에게 지급하는 출산급여에 해당하는 유형이 없습니다. 다자녀 사업으로 한정되지 않아 6번에 해당하지 않으며, 73번 장애인 가정 출산비용 지원과도 급여 명목과 목적이 다릅니다.",
+  "type_evidence": "[지원대상] 1인 자영업자, 프리랜서, 특수형태근로자, 농업인 등 소득활동을 하나 고용보험 출산휴가급여를 받을 수 없는 출산여성",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

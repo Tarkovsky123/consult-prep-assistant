@@ -1,0 +1,59 @@
+{
+ "backend": "codex",
+ "sec": 18.7,
+ "result": {
+  "target": "경상남도 어린이집 재원 외국인 영유아(0~5세)",
+  "content": "경상남도 어린이집 재원 외국인 영유아(0~5세) 보육료 지원",
+  "criteria": "경상남도 어린이집 재원 외국인 영유아(0~5세)",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [
+    "영유아"
+   ],
+   "age_min": 0,
+   "age_max": 5,
+   "age_evidence": "영유아(0~5세)",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [],
+   "conditions": [
+    {
+     "text": "경상남도 어린이집에 재원",
+     "join": "AND",
+     "exception": false,
+     "evidence": "경상남도 어린이집 재원"
+    },
+    {
+     "text": "외국인",
+     "join": "AND",
+     "exception": false,
+     "evidence": "외국인"
+    },
+    {
+     "text": "0~5세 영유아",
+     "join": "AND",
+     "exception": false,
+     "evidence": "영유아(0~5세)"
+    }
+   ],
+   "unknown_fields": [
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_type",
+    "region_name",
+    "region_evidence",
+    "support_form"
+   ]
+  }
+ }
+}

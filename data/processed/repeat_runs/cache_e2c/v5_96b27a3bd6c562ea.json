@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 16.0,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "지원 항목은 한의약 첩약 치료비로, 1번의 체외수정·인공수정 시술비와 다르다. 난임이라는 목적은 같지만 단순한 지원 방식의 차이가 아니라 치료 항목이 달라 가까움으로도 분류하지 않는다.",
+  "type_evidence": "[지원내용] 지정한의원 첩약 치료비용의 본인부담금 10% 직접 결제90%(120만원)는 지정한의원에서 보건소로 의료비 청구",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

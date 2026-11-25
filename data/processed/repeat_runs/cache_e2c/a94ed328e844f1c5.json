@@ -1,0 +1,80 @@
+{
+ "backend": "codex",
+ "sec": 28.0,
+ "result": {
+  "target": "부산 관내 유‧초‧중‧고등학교 졸업 예정자 중 아래 자격에 부합하는 학생(저소득층) ① 국민기초생활수급자, ② 한부모가족보호대상자, ③ 법정차상위계층, ④ 기준 중위소득 100% 이하 해당자, ⑤ 특수교육대상자 (학교장추천 10%)",
+  "content": "1인당 7만원 한도 내 지원",
+  "criteria": "부산 관내 유‧초‧중‧고등학교 졸업 예정자 중 아래 자격에 부합하는 학생(저소득층) ① 국민기초생활수급자, ② 한부모가족보호대상자, ③ 법정차상위계층, ④ 기준 중위소득 100% 이하 해당자, ⑤ 특수교육대상자 (학교장추천 10%)",
+  "amount_won": 80000,
+  "cycle": "미상",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [
+    "영유아",
+    "아동",
+    "청소년"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": "유‧초‧중‧고등학교 졸업 예정자",
+   "household": [
+    "저소득",
+    "한부모·조손"
+   ],
+   "income_type": "중위소득기준",
+   "income_median_pct": 100,
+   "income_evidence": "기준 중위소득 100% 이하 해당자",
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [],
+   "conditions": [
+    {
+     "text": "부산 관내 유‧초‧중‧고등학교 졸업 예정자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부산 관내 유‧초‧중‧고등학교 졸업 예정자"
+    },
+    {
+     "text": "국민기초생활수급자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "국민기초생활수급자"
+    },
+    {
+     "text": "한부모가족보호대상자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "한부모가족보호대상자"
+    },
+    {
+     "text": "법정차상위계층",
+     "join": "OR",
+     "exception": false,
+     "evidence": "법정차상위계층"
+    },
+    {
+     "text": "기준 중위소득 100% 이하 해당자",
+     "join": "OR",
+     "exception": false,
+     "evidence": "기준 중위소득 100% 이하 해당자"
+    },
+    {
+     "text": "특수교육대상자 (학교장추천 10%)",
+     "join": "OR",
+     "exception": false,
+     "evidence": "특수교육대상자 (학교장추천 10%)"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "region_type",
+    "region_name",
+    "region_evidence",
+    "support_form"
+   ]
+  }
+ }
+}

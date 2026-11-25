@@ -1,0 +1,58 @@
+{
+ "backend": "codex",
+ "sec": 17.2,
+ "result": {
+  "target": "단양군 어르신 농어촌버스 무료 이용 지원에 관한 조례 제2조제1호에 따른 어르신 중 교통복지카드를 신청하여 발급받은 사람",
+  "content": "어르신 교통복지카드를 지급 및 사용(월 20회 한도 농어촌버스 무료 이용 지원)",
+  "criteria": "단양군에 주민등록을 두고 거주하는 65세 이상의 군민 중 교통복지카드를 신청하여 발급받은 사람",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "단양군에 주민등록을 두고 거주하는",
+  "item": {
+   "id": "P",
+   "life": [
+    "노년"
+   ],
+   "age_min": 65,
+   "age_max": null,
+   "age_evidence": "65세 이상의 군민",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "단양군",
+   "region_evidence": "단양군에 주민등록을 두고 거주하는",
+   "support_form": [
+    "바우처·이용권"
+   ],
+   "conditions": [
+    {
+     "text": "단양군에 주민등록을 두고 거주해야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "단양군에 주민등록을 두고 거주하는"
+    },
+    {
+     "text": "65세 이상이어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "65세 이상의 군민"
+    },
+    {
+     "text": "교통복지카드를 신청하여 발급받아야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "교통복지카드를 신청하여 발급받은 사람"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

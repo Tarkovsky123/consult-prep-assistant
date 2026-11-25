@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 14.0,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "대상포진 예방접종 비용 지원이며, 유형목록에 예방접종과 급여 항목이 같은 유형이 없다.",
+  "type_evidence": "2만원으로 접종 (약 6만원정도 지원)",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "국가적 피해자·재난 예방(예방접종)",
+  "exclude_evidence": "대상포진 예방접종 지원사업",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 16.5,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "어린이집 보육료를 지원하는 사업으로, 유형목록에 같은 급여 항목이 없다. 아이돌봄서비스 본인부담금 지원과는 서비스 및 비용의 종류가 다르다.",
+  "type_evidence": "지원내용 : 보육료 지원  - 0~2세 :  영아 부모 보육료의 30% 지원  - 3~5세 유아 : 누리과정 보육료의 30%지원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "기타 특정대상 — 외국인 대상 사업",
+  "exclude_evidence": "도내에 90일을 초과하여 거주하는 외국인 자녀(체류 등록) 중 도내 어린이집 재원 시(*불법체류자, 미등록자 등 제외)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

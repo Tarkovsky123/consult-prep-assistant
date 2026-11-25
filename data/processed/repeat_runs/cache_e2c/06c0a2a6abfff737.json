@@ -1,0 +1,72 @@
+{
+ "backend": "codex",
+ "sec": 31.0,
+ "result": {
+  "target": "논산시에 주소를 두고 전세자금 대출을 이용 중인 청년 중 아래의 조건을 모두 만족하는 만19세 이상 ~ 45세 이하 자 1. 무주택 세대주이면서 세대원(배우자 및 자녀) 전원 무주택자 2. 가구소득인정액이 기준중위소득 180%* 이하인 청년",
+  "content": "2026년 1월 이후 본인이 납입한 대출이자의 50% 지원   - 신혼부부 및 육아가구 : 年 최대 2,000천원   - 그 외 청년 : 年 최대 1,500천원",
+  "criteria": "논산시에 주소를 두고 전세자금 대출을 이용 중인 청년 중 아래의 조건을 모두 만족하는 만19세 이상 ~ 45세 이하 자 1. 무주택 세대주이면서 세대원(배우자 및 자녀) 전원 무주택자 2. 가구소득인정액이 기준중위소득 180%* 이하인 청년",
+  "amount_won": 2000000,
+  "cycle": "연",
+  "region": "논산시에 주소를 두고",
+  "item": {
+   "id": "P",
+   "life": [
+    "청년"
+   ],
+   "age_min": 19,
+   "age_max": 45,
+   "age_evidence": "만19세 이상 ~ 45세 이하",
+   "household": [],
+   "income_type": "중위소득기준",
+   "income_median_pct": 180,
+   "income_evidence": "가구소득인정액이 기준중위소득 180%* 이하인 청년",
+   "region_type": "거주지한정",
+   "region_name": "논산시",
+   "region_evidence": "논산시에 주소를 두고",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "논산시에 주소를 둔 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "논산시에 주소를 두고"
+    },
+    {
+     "text": "전세자금 대출을 이용 중인 청년",
+     "join": "AND",
+     "exception": false,
+     "evidence": "전세자금 대출을 이용 중인 청년"
+    },
+    {
+     "text": "만 19세 이상 45세 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "만19세 이상 ~ 45세 이하"
+    },
+    {
+     "text": "무주택 세대주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "무주택 세대주이면서"
+    },
+    {
+     "text": "세대원인 배우자 및 자녀 전원이 무주택자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "세대원(배우자 및 자녀) 전원 무주택자"
+    },
+    {
+     "text": "가구소득인정액이 기준중위소득 180% 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "가구소득인정액이 기준중위소득 180%* 이하인 청년"
+    }
+   ],
+   "unknown_fields": [
+    "household"
+   ]
+  }
+ }
+}

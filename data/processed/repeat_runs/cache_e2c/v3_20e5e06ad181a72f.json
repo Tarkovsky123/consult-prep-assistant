@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 16.5,
+ "result": {
+  "type_no": "22",
+  "type_reason": "미취업 청년에게 자격시험 응시료를 실비 지원하므로 22번에 해당한다. 수강료 등 자격증 취득비 지원은 명시되어 있지 않다.",
+  "type_evidence": "종로구 미취업 청년 자격시험 응시료지원사업",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "종로구에 거주하는 미취업 청년(만19~39세)을 대상으로 지원합니다.",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

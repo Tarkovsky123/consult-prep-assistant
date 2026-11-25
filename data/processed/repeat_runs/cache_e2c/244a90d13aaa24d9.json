@@ -1,0 +1,91 @@
+{
+ "backend": "codex",
+ "sec": 31.4,
+ "result": {
+  "target": "10년 이상된 노후주택을 구입하여 리모델링 하고자 하는 1주택자 신혼부부 및 다자녀가구",
+  "content": "리모델링 공사 비용의 50%, 최대 5백만원을 보조금으로 지원",
+  "criteria": "10년 이상된 노후주택을 리모델링 하고자 하는 1주택자 신혼부부 및 다자녀가구  - 신혼부부: 혼인신고일 기준 7년 이내  - 다자녀가구: 만18세 이하 자녀가 2명 이상인 가구  - 소득기준: 부부합산 연소득 1억원 이하  - 주택기준: 김해 소재 10년 이상 노후주택, 매입금액 2억 5천만원 이하  - 매입일기준: (신혼부부) 혼인신고일 이전 1년 ~ 혼인신고일 이후                    (다자녀가구) 별도기준 없음",
+  "amount_won": 5000000,
+  "cycle": "미상",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [
+    "다자녀"
+   ],
+   "income_type": "기타소득기준",
+   "income_median_pct": null,
+   "income_evidence": "부부합산 연소득 1억원 이하",
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "1주택자로서 노후주택을 구입하여 리모델링하려는 가구",
+     "join": "AND",
+     "exception": false,
+     "evidence": "노후주택을 구입하여 리모델링 하고자 하는 1주택자"
+    },
+    {
+     "text": "혼인신고일 기준 7년 이내인 신혼부부",
+     "join": "OR",
+     "exception": false,
+     "evidence": "신혼부부: 혼인신고일 기준 7년 이내"
+    },
+    {
+     "text": "만 18세 이하 자녀가 2명 이상인 다자녀가구",
+     "join": "OR",
+     "exception": false,
+     "evidence": "다자녀가구: 만18세 이하 자녀가 2명 이상인 가구"
+    },
+    {
+     "text": "부부합산 연소득 1억원 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부부합산 연소득 1억원 이하"
+    },
+    {
+     "text": "대상 주택이 김해에 소재한 10년 이상 노후주택",
+     "join": "AND",
+     "exception": false,
+     "evidence": "김해 소재 10년 이상 노후주택"
+    },
+    {
+     "text": "주택 매입금액 2억 5천만원 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "매입금액 2억 5천만원 이하"
+    },
+    {
+     "text": "신혼부부는 혼인신고일 이전 1년부터 혼인신고일 이후에 주택 매입",
+     "join": "AND",
+     "exception": false,
+     "evidence": "(신혼부부) 혼인신고일 이전 1년 ~ 혼인신고일 이후"
+    },
+    {
+     "text": "다자녀가구는 주택 매입일에 별도 기준 없음",
+     "join": "AND",
+     "exception": true,
+     "evidence": "(다자녀가구) 별도기준 없음"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "income_median_pct",
+    "region_type",
+    "region_name",
+    "region_evidence"
+   ]
+  }
+ }
+}

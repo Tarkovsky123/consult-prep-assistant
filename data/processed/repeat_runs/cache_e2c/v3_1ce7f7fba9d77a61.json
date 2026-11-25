@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 15.8,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 상속포기·한정승인 등을 위한 법률지원서비스이며, 유형목록에 같은 급여 항목이 없다.",
+  "type_evidence": "[지원내용] 법률지원서비스를 진행한 기관에 직접 제공(시->법률지원 기관)",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 14.5,
+ "result": {
+  "type_no": "49",
+  "type_reason": "난임부부에게 난임 시술 관련 교통비를 지원하므로 49번 임산부 교통비에 해당한다. 해당 유형은 난임부부도 대상으로 포함한다.",
+  "type_evidence": "난임부부 원거리 교통비 지원 사업",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": "난임부부 원거리 교통비 지원 사업",
+  "target_in": "안",
+  "target_evidence": "[지원대상] 난임부부 중 여성",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

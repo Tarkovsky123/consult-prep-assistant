@@ -1,0 +1,324 @@
+<title>협의 준비 도우미</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/*__FONTS__*/
+/* 레이아웃: 위 = 제품명·사례 탭(KRDS 탭). 본문 = 왼쪽 사업안 원문(근거 구절 표시) · 오른쪽 도구 초안. 아래 = 측정 공개·출처.
+   #c<사례>-why · #c<사례>-cmp = 제안서 칸에 넣을 720px 캡처 보기(밝은 화면 고정, 그림 안 글자 15px 이상 = 칸 폭 16cm에서 9.4pt 이상).
+   글꼴은 KRDS 지정 Pretendard GOV(사용 글자만 넣음). 색·크기·모서리는 KRDS(대한민국 정부 디자인 시스템) 토큰 값이다(github.com/KRDS-uiux/krds-uiux, resources/css/token/krds_tokens.css, 2026-01-12).
+   판정 색: 신속 = success, 확인 필요 = warning, 협의제외 = information, 일반 = gray. 근거 구절 표시 = primary-10. */
+:root {
+  --bg: #f4f5f6;          /* surface-gray-subtler (gray-5) */
+  --surface: #ffffff;     /* surface-white (gray-0) */
+  --sunk: #f4f5f6;        /* surface-gray-subtler */
+  --ink: #1e2124;         /* text-basic (gray-90) */
+  --ink-strong: #131416;  /* text-bolder (gray-95) */
+  --muted: #464c53;       /* text-subtle (gray-70) */
+  --line: #cdd1d5;        /* border-gray-light (gray-20) */
+  --line-strong: #b1b8be; /* border-gray (gray-30) */
+  --primary: #256ef4;     /* primary-50 */
+  --primary-text: #0b50d0;/* text-primary (primary-60) */
+  --primary-soft: #ecf2fe;/* surface-primary-subtler (primary-5) */
+  --mark: #d8e5fd;        /* primary-10 */
+  --ok: #267337; --ok-soft: #eaf6ec; --ok-line: #228738;          /* success 60 / 5 / 50 */
+  --warn: #8a5c00; --warn-soft: #fff3db; --warn-line: #9e6a00;    /* warning 60 / 5 / 50 */
+  --info: #096ab3; --info-soft: #e7f4fe; --info-line: #0b78cb;    /* information 60 / 5 / 50 */
+  --gray: #464c53; --gray-soft: #e6e8ea; --gray-line: #58616a;    /* gray 70 / 10 / 60 */
+  --font: "Pretendard GOV", "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+  --fs-xs: 13px; --fs-s: 15px; --fs-m: 17px; --fs-l: 19px; --fs-xl: 24px;   /* KRDS label-xsmall · body-small · body-medium · heading-small · heading-medium */
+  --r-s: 4px; --r-m: 8px; --r-l: 10px;                                     /* KRDS radius small · medium · large */
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {   /* KRDS 선명한 화면 모드(high-contrast) 역할 토큰 */
+  --bg: #131416; --surface: #000000; --sunk: #1e2124; --ink: #f4f5f6; --ink-strong: #ffffff; --muted: #cdd1d5; --line: #33363d; --line-strong: #464c53;
+  --primary: #4c87f6; --primary-text: #b1cefb; --primary-soft: #020f27; --mark: #03163a;
+  --ok: #a9dab4; --ok-soft: #0e2012; --ok-line: #228738; --warn: #ffc95c; --warn-soft: #241800; --warn-line: #9e6a00;
+  --info: #9ed2fa; --info-soft: #021a2c; --info-line: #0b78cb; --gray: #cdd1d5; --gray-soft: #1e2124; --gray-line: #8a949e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #131416; --surface: #000000; --sunk: #1e2124; --ink: #f4f5f6; --ink-strong: #ffffff; --muted: #cdd1d5; --line: #33363d; --line-strong: #464c53;
+  --primary: #4c87f6; --primary-text: #b1cefb; --primary-soft: #020f27; --mark: #03163a;
+  --ok: #a9dab4; --ok-soft: #0e2012; --ok-line: #228738; --warn: #ffc95c; --warn-soft: #241800; --warn-line: #9e6a00;
+  --info: #9ed2fa; --info-soft: #021a2c; --info-line: #0b78cb; --gray: #cdd1d5; --gray-soft: #1e2124; --gray-line: #8a949e; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--font); font-size: var(--fs-s); line-height: 1.6; word-break: keep-all; overflow-wrap: anywhere }
+h1, h2, h3, p { margin: 0 }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px;
+  max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px }
+.muted { color: var(--muted) }
+.masthead { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 32px }
+.brand { display: flex; flex-direction: column; gap: 4px }
+.brand h1 { font-size: var(--fs-xl); font-weight: 700; color: var(--ink-strong); text-wrap: balance }
+.brand p { font-size: var(--fs-m); color: var(--muted); max-width: 46ch }
+.note { font-size: var(--fs-xs); color: var(--muted); max-width: 62ch }
+/* KRDS 탭: 밑줄형, 선택 탭은 primary 글자 + 2px 밑줄 */
+.tabs { display: flex; flex-wrap: wrap; gap: 0 4px; border-bottom: 1px solid var(--line) }
+.tab { display: inline-flex; align-items: center; gap: 8px; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; color: var(--muted);
+  padding: 10px 12px; font: 400 var(--fs-s)/1.4 var(--font); cursor: pointer }
+.tab:hover { color: var(--ink) } .tab[aria-selected="true"] { color: var(--primary-text); font-weight: 700; border-bottom-color: var(--primary) }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--v) }
+.v-신속 { --v: var(--ok-line); --vt: var(--ok); --vs: var(--ok-soft) } .v-확인불가 { --v: var(--warn-line); --vt: var(--warn); --vs: var(--warn-soft) }
+.v-협의제외 { --v: var(--info-line); --vt: var(--info); --vs: var(--info-soft) } .v-일반 { --v: var(--gray-line); --vt: var(--gray); --vs: var(--gray-soft) }
+button:focus-visible, summary:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px }
+.grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 16px; align-items: start }
+@media (max-width: 880px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-l); padding: 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0 }
+.card h2 { font-size: var(--fs-m); font-weight: 700; color: var(--ink-strong) }
+.card h2 small { font-size: var(--fs-xs); font-weight: 400; color: var(--muted) }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: var(--fs-xs); color: var(--muted) }
+.case-name { font-size: var(--fs-l); font-weight: 700; color: var(--ink-strong); line-height: 1.45; text-wrap: balance }
+.src { display: flex; flex-direction: column; gap: 4px }
+.src h3 { font-size: var(--fs-xs); font-weight: 700; color: var(--muted) }
+.src .txt { white-space: pre-wrap; background: var(--sunk); border-radius: var(--r-m); padding: 10px 12px; max-height: 15em; overflow-y: auto }
+mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; box-shadow: inset 0 -2px 0 var(--primary) }
+.legend { font-size: var(--fs-xs); color: var(--muted) } .legend mark { padding: 0 3px }
+.gold { border-top: 1px solid var(--line); padding-top: 12px; display: flex; flex-direction: column; gap: 8px }
+.gold h3 { font-size: var(--fs-xs); font-weight: 700; color: var(--muted) }
+.row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center }
+/* KRDS 배지: 테두리 + 글자색, 바탕은 옅게 */
+.badge { display: inline-flex; align-items: center; border: 1px solid var(--line-strong); border-radius: var(--r-s); padding: 1px 8px; font-size: var(--fs-xs); font-weight: 700; color: var(--muted); background: var(--surface); white-space: nowrap }
+.badge.same { border-color: var(--ok-line); color: var(--ok); background: var(--ok-soft) } .badge.diff { border-color: var(--warn-line); color: var(--warn); background: var(--warn-soft) }
+.badge.hit { border-color: var(--primary); color: var(--primary-text); background: var(--primary-soft) }
+.out { display: flex; flex-direction: column; gap: 12px; min-width: 0 }
+.verdict { background: var(--vs); border: 1px solid var(--v); border-radius: var(--r-l); padding: 16px 20px; display: flex; flex-direction: column; gap: 8px }
+.verdict .label { font-size: var(--fs-s); font-weight: 700; color: var(--vt) }
+.verdict .big { font-size: var(--fs-xl); font-weight: 700; color: var(--ink-strong); line-height: 1.35; text-wrap: balance }
+.why { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 8px 16px; margin: 0 }
+.why dt { color: var(--muted); font-size: var(--fs-xs); font-weight: 700; padding-top: 2px } .why dd { margin: 0 }
+.quote { display: block; margin-top: 4px; background: var(--mark); border-radius: var(--r-s); padding: 2px 6px }
+.tbl { overflow-x: auto } table { border-collapse: collapse; width: 100% }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); vertical-align: top }
+th { font-size: var(--fs-xs); color: var(--muted); font-weight: 700; white-space: nowrap; background: var(--sunk) } td.num { color: var(--muted); width: 2.4em; font-variant-numeric: tabular-nums }
+table.wide { min-width: 640px } table.wide td:last-child { white-space: nowrap } table.check { min-width: 460px }
+.grp { display: flex; flex-direction: column; gap: 6px }
+.grp-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px } .grp-head h3 { font-size: var(--fs-s); font-weight: 700 } .grp-head .n { font-size: var(--fs-xs); color: var(--muted) }
+.grp-note { font-size: var(--fs-xs); color: var(--warn); font-weight: 700 }
+.item { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 10px; padding: 10px 12px; border-radius: var(--r-m); background: var(--sunk) }
+.item .nm { font-weight: 700 } .item .wh { font-size: var(--fs-xs); color: var(--muted) } .item .rs { grid-column: 2; font-size: var(--fs-xs); color: var(--muted) }
+.empty { font-size: var(--fs-xs); color: var(--muted) }
+details summary { cursor: pointer; font-size: var(--fs-xs); color: var(--primary-text); font-weight: 700; padding: 4px 0 }
+details[open] summary { margin-bottom: 6px }
+ul.plain { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px }
+.d-warn { color: var(--warn); font-weight: 700 } .d-acc { color: var(--primary-text); font-weight: 700 } .d-same { color: var(--muted) }
+.foot { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px }
+@media (max-width: 880px) { .foot { grid-template-columns: minmax(0, 1fr) } }
+.measure td:last-child { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums }
+@media (max-width: 600px) { .measure td:last-child { white-space: normal } .measure td:first-child { min-width: 8em } }
+/* 캡처 보기: 720px 고정 폭, 가장 작은 글자 15px. 칸 폭 16cm에 넣으면 15px = 9.4pt, 17px = 10.7pt(design.md: 그림 안 글자 9pt 이상) */
+.cap-only { display: none }
+html.cap body { background: #ffffff }
+html.cap .wrap { max-width: none; width: 720px; padding: 8px 24px; margin: 0; gap: 12px }  /* 제안서 쪽 높이에 맞춰 여백을 줄임(11/5) */
+html.cap .masthead, html.cap .tabs, html.cap .grid, html.cap .foot { display: none }
+html.cap .cap-only { display: flex }
+.capv { flex-direction: column; gap: 12px; font-size: var(--fs-m) }
+.capv .head { display: flex; flex-direction: column; gap: 4px } .capv .head .meta { font-size: var(--fs-s) }
+.capv .head .case-name { font-size: var(--fs-xl) }
+.capv .card { padding: 11px 16px; gap: 7px }
+.capv .card h2 { font-size: var(--fs-l) }
+.capv .why dt, .capv .item .wh, .capv .item .rs, .capv .badge, .capv .grp-note, .capv .legend, .capv .empty, .capv .grp-head .n, .capv .card h2 small, .capv .note { font-size: var(--fs-s) }
+.capv .grp-head h3 { font-size: var(--fs-m) } .capv .excerpt { white-space: pre-wrap; background: var(--sunk); border-radius: var(--r-m); padding: 7px 12px; line-height: 1.5 }
+@media (prefers-reduced-motion: no-preference) { .tab { transition: color .12s, border-color .12s } }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="brand">
+      <h1>협의 준비 도우미</h1>
+      <p>사회보장 사업을 신설·변경하는 지자체 담당자에게 협의 요청서에 넣을 유형 판단 근거와 비교할 기존 사업을 초안으로 드립니다. 판정은 담당자가 합니다.</p>
+    </div>
+    <p class="note">시연 사례 6건: 대구·경북 2025년 협의완료 사례 5건(복지로 등록 원문)과 가상 경계 사례 1건. 화면의 결과는 모두 시제품 v3를 실제로 돌린 출력이며 손으로 고치지 않았습니다(2026-11-05).</p>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="시연 사례"></nav>
+  <main class="grid">
+    <section class="card" id="input" aria-label="사업안"></section>
+    <section class="out" id="out" aria-label="도구 초안"></section>
+  </main>
+  <section class="cap-only capv" id="cap" aria-label="캡처 보기"></section>
+  <footer class="foot">
+    <section class="card">
+      <h2>측정 공개 <small>정답표는 도구를 돌리기 전에 고정</small></h2>
+      <div class="tbl"><table class="measure">
+        <tr><th>무엇을</th><th>어디서</th><th>결과</th></tr>
+        <tr><td>79개 신속협의 유형 중 맞는 유형 찾기</td><td>대구·경북 밖 새 협의 사례 20건</td><td>규칙 10/20 → AI 15/20</td></tr>
+        <tr><td>최종 유형 판정</td><td>같은 20건(일반협의가 15건인 표본)</td><td>17/20 (‘항상 일반’ 15/20)</td></tr>
+        <tr><td>신속협의를 잘못 권한 사례</td><td>같은 20건</td><td>0건</td></tr>
+        <tr><td>비교 대상 사업 판정이 사람과 맞는 정도</td><td>대구·경북 협의 96건의 후보 675쌍</td><td>정밀도 90% · 재현율 90%</td></tr>
+        <tr><td>같은 판정의 사업명 유사도 기준선</td><td>같은 675쌍</td><td>재현율 72%</td></tr>
+        <tr><td>검색 결과 밖에서 AI가 고른 후보</td><td>사람이 눈가림으로 확인한 100개</td><td>36/50 실제 비교 대상 (AI 무관 7/50)</td></tr>
+      </table></div>
+      <p class="note">표본이 작고(20건·96건) 정답표는 제안자 1인이 달았습니다. 같은 지자체·광역 후보에서는 AI가 넓게 고릅니다(15개 중 5개만 실제 비교 대상). 구간별·비율 상한은 아직 계산하지 못해 ‘확인 필요’로 넘깁니다.</p>
+    </section>
+    <section class="card">
+      <h2>쓰는 자료</h2>
+      <ul class="plain">
+        <li>2026 사회보장제도 신설·변경 협의운용지침(신속협의 유형 79개, 협의제외 기준 Ⅱ.3)</li>
+        <li>복지로 지자체 복지서비스 4,828건(한국사회보장정보원 공공데이터, 2026-11 수집)</li>
+        <li>중앙부처 복지서비스 461건, 2025년 협의완료 1,146건</li>
+      </ul>
+      <p class="note">AI가 근거로 든 구절은 원문에 그대로 있는지 대조하고, 왼쪽 원문에 <mark>이렇게</mark> 표시합니다. 원문에 없으면 ‘확인하지 못한 항목’에 올립니다.</p>
+    </section>
+  </footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const C = DATA.cases;
+const VLABEL = { "신속": "신속협의 후보", "일반": "일반협의", "협의제외": "협의제외 후보", "확인불가": "확인 필요(보류)" };
+const RANGE = { "안": "범위 안", "밖": "범위 밖", "확인불가": "확인 필요" };  // 대상·상한 대조값을 그대로 읽히는 말로
+const rl = v => RANGE[v] || v || "-";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const clean = q => String(q || "").replace(/^\s*\[[^\]]*\]\s*/, "").replace(/^\s*(지원대상|선정기준|지원내용)\s*[:：]\s*/, "").trim();
+const hasType = c => c.type.no && c.type.no !== "해당없음";
+
+function ranges(text, quotes) {
+  const out = [];
+  for (const q of quotes.map(clean).filter(q => q.length >= 4)) {
+    const toks = q.split(/\s+/).filter(Boolean).map(reEsc);
+    const m = toks.length && new RegExp(toks.join("\\s+")).exec(text);
+    if (m) out.push([m.index, m.index + m[0].length]);
+  }
+  return out.sort((a, b) => a[0] - b[0]);
+}
+function highlight(text, quotes) {
+  let out = "", at = 0;
+  for (const [s, e] of ranges(text, quotes)) { if (s < at) continue; out += esc(text.slice(at, s)) + "<mark>" + esc(text.slice(s, e)) + "</mark>"; at = e; }
+  return out + esc(text.slice(at));
+}
+function excerpt(text, quotes, pad = 70) {  // 캡처용: 짧은 원문은 통째로, 긴 원문은 근거 구절 앞뒤만(겹치는 구간은 합침)
+  const rs = ranges(text, quotes);
+  if (!rs.length) return [];
+  if (text.length <= 400) return [highlight(text, quotes)];
+  const wins = [];
+  for (const [s, e] of rs) {
+    const a = Math.max(0, s - pad), b = Math.min(text.length, e + pad), last = wins[wins.length - 1];
+    if (last && a <= last[1]) last[1] = Math.max(last[1], b); else wins.push([a, b]);
+  }
+  return wins.map(([a, b]) => (a > 0 ? "…" : "") + highlight(text.slice(a, b), quotes).trim() + (b < text.length ? "…" : ""));
+}
+
+function renderTabs(cur) {
+  document.getElementById("tabs").innerHTML = C.map(c =>
+    `<button type="button" role="tab" class="tab v-${esc(c.verdict)}" aria-selected="${c.id === cur}" data-id="${esc(c.id)}"><span class="dot" aria-hidden="true"></span>${esc(c.label)}</button>`).join("");
+}
+function headHTML(c, cap = false) {  // 캡처 보기에서는 내부 사례 번호를 뺀다(제안서에 풀지 않은 번호가 남지 않게)
+  return `<div class="meta">${c.synth ? `<span class="badge diff">가상 사례</span>` : ""}<span>${esc(c.org)}</span>${c.kind ? `<span>${esc(c.kind)}</span>` : ""}${cap ? "" : `<span>사례 ${esc(c.id)}</span>`}</div><h2 class="case-name">${esc(c.name)}</h2>`;
+}
+function renderInput(c) {
+  const blocks = c.synth
+    ? `<div class="src"><h3>사업안(가상)</h3><div class="txt">${highlight(c.srcText, c.quotes)}</div></div>`
+    : Object.entries(c.src).map(([k, v]) => `<div class="src"><h3>${esc(k)}</h3><div class="txt">${v ? highlight(v, c.quotes) : '<span class="muted">원문에 없음</span>'}</div></div>`).join("");
+  const g = c.gold, same = g.유형판정 === c.verdict;
+  document.getElementById("input").innerHTML = `${headHTML(c)}
+    <p class="legend"><mark>표시한 구절</mark>은 AI가 판단 근거로 든 원문입니다.</p>
+    ${blocks}
+    <div class="gold">
+      <h3>사람 판정(도구를 돌리기 전에 고정한 정답표)</h3>
+      <div class="row"><span class="badge">${esc(VLABEL[g.유형판정] || g.유형판정)}</span><span class="badge">유형 ${esc(g.유형연번 || "-")}</span>
+        ${g.대상 ? `<span class="badge">대상: ${esc(rl(g.대상))}</span>` : ""}${g.상한 ? `<span class="badge">상한: ${esc(rl(g.상한))}</span>` : ""}
+        <span class="badge ${same ? "same" : "diff"}">${same ? "도구 초안과 같음" : "도구 초안과 다름"}</span></div>
+      <p class="note">실제 사례 5건은 시제품을 고치는 데 쓴 개발용 사례입니다. 정확도는 아래 ‘측정 공개’의 새 사례 값으로 봅니다.</p>
+    </div>`;
+}
+function itemHTML(x) {
+  return `<div class="item"><span class="badge ${x.판정 === "동일" ? "hit" : ""}">${esc(x.판정)}</span>
+    <div><span class="nm">${esc(x.사업명)}</span>${x.기존사업 ? ` <span class="badge diff">변경 대상 기존 사업</span>` : ""}
+      <div class="wh">${esc(x.시도)} ${esc(x.시군구 || "(본청)")}</div></div>
+    <div class="rs">${esc(x.근거)}</div></div>`;
+}
+function verdictHTML(c) {
+  const t = c.type, ex = c.excluded;
+  const head = c.verdict === "협의제외" ? esc(ex.clause || "협의제외 범주") : hasType(c) ? `신속협의 유형 ${esc(t.no)}번 ${esc(t.name)}` : "같은 급여 항목의 신속협의 유형 없음";
+  const facts = [];
+  if (hasType(c)) facts.push(`<span class="badge">대상: ${esc(rl(c.target.v))}</span>`, `<span class="badge">상한: ${esc(rl(c.amount.v))}</span>`);
+  if (c.dup.v) facts.push(`<span class="badge ${c.dup.v === "예" ? "diff" : ""}">중복·보충 조건: ${c.dup.v === "예" ? "위반" : "위반 근거 없음"}</span>`);
+  facts.push(`<span class="badge">협의제외: ${ex.v === "예" ? "해당" : ex.v === "아니오" ? "해당 안 됨" : esc(ex.v || "-")}</span>`);
+  return `<div class="verdict v-${esc(c.verdict)}"><span class="label">도구 초안 · ${esc(VLABEL[c.verdict] || c.verdict)}</span><p class="big">${head}</p><div class="row">${facts.join("")}</div></div>`;
+}
+function whyRows(c) {
+  const t = c.type, ex = c.excluded, q = s => `<span class="quote">${esc(clean(s))}</span>`;
+  return [
+    ["유형을 고른 이유", esc(c.reason) + (c.typeEvidence ? q(c.typeEvidence) : "")],
+    hasType(c) ? ["유형의 조건", `대상 ‘${esc(t.target)}’ · 상한 ‘${esc(t.cap)}’${t.dup ? ` · 중복 조건 ‘${esc(t.dup)}’` : ""}`] : null,
+    hasType(c) ? ["대상 대조", esc(c.target.why)] : null,
+    hasType(c) ? ["상한 대조", esc(c.amount.why)] : null,
+    c.dup.v === "예" ? ["중복 조건 위반", q(c.dup.evidence)] : null,
+    ex.v === "예" ? ["협의제외 근거", `${esc(ex.clause)} (지침 Ⅱ.3)${ex.evidence ? q(ex.evidence) : ""}`] : null,
+    c.alt.length ? ["함께 볼 유형", esc(c.alt.join(", "))] : null,
+  ].filter(Boolean);
+}
+const dl = rows => `<dl class="why">${rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>`;
+function groupsHTML(c, opts = {}) {
+  const order = opts.near ? ["같은 지자체", "같은 광역 본청", "같은 시도"] : ["같은 지자체", "같은 광역 본청", "같은 시도", "다른 시도"];
+  return order.map(g => {
+    const items = c.groups[g] || [], near = g === "같은 지자체" || g === "같은 광역 본청";
+    const body = !items.length ? `<p class="empty">AI가 비교 대상으로 고른 사업 없음</p>`
+      : g === "다른 시도" && items.length > 5
+        ? items.slice(0, 5).map(itemHTML).join("") + `<details><summary>같은 사업 ${items.length - 5}건 더 보기</summary><div class="grp">${items.slice(5).map(itemHTML).join("")}</div></details>`
+        : items.map(itemHTML).join("");
+    return `<div class="grp"><div class="grp-head"><h3>${g}</h3><span class="n">${items.length}건</span>${near && items.length ? `<span class="grp-note">AI가 넓게 고르는 묶음이라 원문을 꼭 확인</span>` : ""}</div>${body}</div>`;
+  }).join("");
+}
+function renderOut(c) {
+  const F = c.bokjiro ? `
+    <div class="card"><h2>복지로 등록 초안 · 현행화 차이표 <small>협의 뒤 등록(지침 Ⅶ)</small></h2>
+      <p class="note">현재 복지로 등록본(${esc(c.bokjiro.servId)})과 사업안으로 만든 등록 초안을 항목별로 비교합니다.</p>
+      <div class="tbl"><table class="wide"><tr><th>항목</th><th>초안</th><th>현재 복지로</th><th>차이</th></tr>
+      ${c.bokjiro.rows.map(r => { const d = r.차이 || ""; const cls = d.startsWith("불일치") ? "d-warn" : d.includes("제안") ? "d-acc" : "d-same";
+        return `<tr><td>${esc(r.항목)}</td><td>${esc(r.초안)}</td><td>${esc(r["현재 복지로"])}</td><td class="${cls}">${esc(d)}</td></tr>`; }).join("")}
+      </table></div></div>` : "";
+  document.getElementById("out").innerHTML = `${verdictHTML(c)}
+    <div class="card"><h2>판단 근거</h2>${dl(whyRows(c))}</div>
+    <div class="card"><h2>서식 1-2 사전 체크리스트 초안</h2>
+      <div class="tbl"><table class="check"><tr><th>번호</th><th>항목</th><th>초안</th><th>근거</th></tr>
+      ${c.checklist.map(r => `<tr><td class="num">${esc(r[0])}</td><td>${esc(r[1])}</td><td>${esc(r[2])}</td><td class="muted">${esc(r[3])}</td></tr>`).join("")}</table></div></div>
+    <div class="card"><h2>비교 대상 후보 <small>후보 ${c.candN}개 중 AI가 동일·유사로 본 것, 지역별</small></h2>
+      ${c.droppedSelf ? `<p class="note">이 사업 자체(협의 뒤 복지로에 등록된 ‘${esc(c.droppedSelf)}’)는 신설 당시 없던 사업이라 뺐습니다.</p>` : ""}
+      ${groupsHTML(c)}</div>
+    <div class="card"><h2>관련 협의 이력 <small>2025년 협의완료, 사업명·결과만 공개</small></h2>
+      ${c.historyDropped ? `<p class="note">이 사례 자신의 2025년 협의 기록은 뺐습니다.</p>` : ""}
+      <ul class="plain">${c.history.map(h => `<li>${esc(h.기관)} · ${esc(h.신설변경)} · ${esc(h.사업명)} → ${esc(h.결과)}</li>`).join("")}</ul></div>
+    <div class="card"><h2>확인하지 못한 항목</h2><ul class="plain">${c.hold.map(h => `<li>${esc(h)}</li>`).join("")}</ul></div>
+    ${F}`;
+}
+function renderCap(c, kind) {
+  const el = document.getElementById("cap");
+  if (kind === "why") {
+    const texts = c.synth ? [c.srcText] : Object.values(c.src).filter(Boolean);
+    // 원문 항목 기호(○ □) 앞에서 줄을 바꾸고, 근거 구절이 든 줄만 남긴다(그림 높이를 쪽에 맞추려고)
+    const brk = h => {
+      const lines = h.replace(/\s*([○□])/g, "<br>$1").replace(/<mark><br>/g, "<br><mark>").split("<br>");
+      let open = false;
+      const keep = lines.filter(l => { const k = open || l.includes("<mark>"); open = (open || l.includes("<mark>")) && l.lastIndexOf("<mark>") > l.lastIndexOf("</mark>"); return k; });
+      return keep.join("<br>");
+    };
+    const parts = texts.flatMap(t => excerpt(t, c.quotes, 30)).slice(0, 2).map(brk);  // 그림 한 장에 메시지 하나: 발췌 2개까지
+    const rows = whyRows(c).filter(([k]) => ["대상 대조", "상한 대조", "중복 조건 위반", "협의제외 근거"].includes(k));
+    // 사업 이름은 그림 캡션에 적으므로 그림에서는 뺀다(제안서 쪽 높이를 줄이려고, 11/5)
+    el.innerHTML = `${verdictHTML(c)}
+      <div class="card"><h2>원문에서 찾은 근거 구절</h2><p class="legend"><mark>표시</mark> = AI가 근거로 든 원문(원문에 그대로 있는지 대조함). 근거가 든 줄만 옮겼습니다.</p>
+        ${parts.length ? parts.map(p => `<div class="excerpt">${p}</div>`).join("") : '<p class="empty">원문에서 찾은 근거 구절 없음</p>'}</div>
+      ${rows.length ? `<div class="card"><h2>대조 결과</h2>${dl(rows)}</div>` : ""}`;
+  } else {
+    const far = c.groups["다른 시도"] || [];
+    el.innerHTML = `<div class="head">${headHTML(c, true)}</div>
+      <div class="card"><h2>비교 대상 후보 <small>후보 ${c.candN}개 중 AI가 동일·유사로 본 것</small></h2>${groupsHTML(c, { near: true })}
+        <div class="grp"><div class="grp-head"><h3>다른 시도</h3><span class="n">${far.length}건</span></div>
+          <p class="empty">${far.slice(0, 3).map(x => `${esc(x.시도)} ${esc(x.시군구 || "")} ${esc(x.사업명)}`).join(" · ")}${far.length > 3 ? ` 외 ${far.length - 3}건(참고 사례로 접어 둠)` : ""}</p></div></div>`;
+  }
+}
+function parse() { const m = /^#c([A-Za-z0-9]+)(?:-(why|cmp))?$/.exec(location.hash || ""); return m ? { id: m[1], cap: m[2] } : { id: C[0].id }; }
+function show(id, push) {
+  const c = C.find(x => x.id === id) || C[0];
+  renderTabs(c.id); renderInput(c); renderOut(c);
+  document.querySelectorAll("#input .txt").forEach(box => { const m = box.querySelector("mark"); if (m) box.scrollTop = Math.max(0, m.offsetTop - box.offsetTop - 24); });
+  if (push) { try { history.replaceState(null, "", "#c" + c.id); } catch (e) {} }
+}
+const ROOT_EL = document.documentElement, VIEWER_THEME = ROOT_EL.dataset.theme;  // 보는 사람이 고른 테마는 캡처 보기에서만 잠시 덮는다
+function route() {
+  const r = parse(), cap = !!r.cap;
+  ROOT_EL.classList.toggle("cap", cap);
+  if (cap) { ROOT_EL.dataset.theme = "light"; renderCap(C.find(x => x.id === r.id) || C[0], r.cap); }
+  else { if (VIEWER_THEME) ROOT_EL.dataset.theme = VIEWER_THEME; else delete ROOT_EL.dataset.theme; show(r.id, false); }
+}
+document.getElementById("tabs").addEventListener("click", e => { const b = e.target.closest("button[data-id]"); if (b) show(b.dataset.id, true); });
+window.addEventListener("hashchange", route);
+route();
+</script>

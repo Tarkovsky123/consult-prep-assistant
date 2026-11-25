@@ -1,0 +1,56 @@
+{
+ "backend": "codex",
+ "sec": 19.5,
+ "result": {
+  "target": "전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자",
+  "content": "전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자에게 최대 6개월까지 200만원 지원",
+  "criteria": "전북 도내 우선지원 대상기업에 재직중인 육아휴직 대체인력으로 채용된 근로자",
+  "amount_won": 2000000,
+  "cycle": "미상",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "전북 도내 우선지원 대상기업에 재직 중인 근로자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "전북 도내 우선지원 대상기업에 재직중인"
+    },
+    {
+     "text": "육아휴직 대체인력으로 채용된 근로자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "육아휴직 대체인력으로 채용된 근로자"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_type",
+    "region_name",
+    "region_evidence"
+   ]
+  }
+ }
+}

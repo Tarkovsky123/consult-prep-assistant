@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 11.3,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "어린이집 보육료를 지원하는 사업으로, 급여 항목이 같은 신속협의 유형이 없다. 다함께돌봄센터 이용료나 아이돌봄서비스 본인부담금과는 지원하는 서비스가 다르다.",
+  "type_evidence": "지원내용: 보육지원금 월 10만원/1인 (어린이집 직접 지원)",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "기타 특정대상: 외국인 대상 사업",
+  "exclude_evidence": "사업대상: 도내 어린이집 재원 중인 미등록 이주배경 아동",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

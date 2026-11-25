@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 14.3,
+ "result": {
+  "type_no": "15",
+  "type_reason": "학생 교육비를 체크카드 바우처 포인트로 지원하므로 15번 아동·청소년 교육·문화 바우처에 해당한다. 중·고등학교 재학생은 해당 유형의 학령기 아동·청소년 대상에 들어간다.",
+  "type_evidence": "[지원내용] 꿈드리미 체크카드에 바우처 포인트 지급",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "[지원대상] 광주광역시 관내 국,공,사립 중,고등학교에 재학중인 학생",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

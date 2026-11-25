@@ -1,0 +1,72 @@
+{
+ "backend": "codex",
+ "sec": 22.7,
+ "result": {
+  "target": "국·공립 및 사립유치원에 다니는 외국국적 3～5세 유아- 등록 외국인에 한하여 지원(외국인등록증 必)",
+  "content": "1. 추가지원금- 공사립 3~5세 외국국적 유아: 월5만원2. 무상교육비-공립 4~5세 외국국적 유아: 월2만원-사립 4~5세 외국국적 유아: 월11만원※ 교육부 단계적 무상교육비 확대와 동일하게 3세는 무상교육비 지원 없음",
+  "criteria": "국·공립 및 사립유치원에 다니는 외국국적 3～5세 유아(등록 외국인에 한하여 지원)",
+  "amount_won": 110000,
+  "cycle": "월",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [
+    "영유아"
+   ],
+   "age_min": 3,
+   "age_max": 5,
+   "age_evidence": "외국국적 3～5세 유아",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "국·공립 또는 사립유치원에 재원",
+     "join": "AND",
+     "exception": false,
+     "evidence": "국·공립 및 사립유치원에 다니는"
+    },
+    {
+     "text": "외국국적 유아",
+     "join": "AND",
+     "exception": false,
+     "evidence": "외국국적 3～5세 유아"
+    },
+    {
+     "text": "3~5세",
+     "join": "AND",
+     "exception": false,
+     "evidence": "3～5세 유아"
+    },
+    {
+     "text": "등록 외국인이며 외국인등록증 필수",
+     "join": "AND",
+     "exception": false,
+     "evidence": "등록 외국인에 한하여 지원(외국인등록증 必)"
+    },
+    {
+     "text": "3세는 무상교육비 지원 제외",
+     "join": "AND",
+     "exception": true,
+     "evidence": "3세는 무상교육비 지원 없음"
+    }
+   ],
+   "unknown_fields": [
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_type",
+    "region_name",
+    "region_evidence"
+   ]
+  }
+ }
+}

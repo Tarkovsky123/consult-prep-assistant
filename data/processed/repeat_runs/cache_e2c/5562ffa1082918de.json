@@ -1,0 +1,61 @@
+{
+ "backend": "codex",
+ "sec": 28.2,
+ "result": {
+  "target": "신청일 기준 주민등록상 1년 이상 거제시에 주소를 둔 60세 이상, 해당연도 건강보험료 기준 중위소득 120%이하에 해당하는 자로 정형외과 전문의에게 무릎인공관절 치환술 진단을 받은 자",
+  "content": "무릎인공관절 치환술 의료비 중 본인부담금 지원(관절당 100만원, 최대 200만원 이내 지원)-의료기관에 지급",
+  "criteria": "신청일 기준 주민등록상 1년 이상 거제시에 주소를 둔 60세 이상, 해당연도 건강보험료 기준 중위소득 120%이하에 해당하는 자로 정형외과 전문의에게 무릎인공관절 치환술 진단을 받은 자",
+  "amount_won": 2000000,
+  "cycle": "미상",
+  "region": "신청일 기준 주민등록상 1년 이상 거제시에 주소를 둔",
+  "item": {
+   "id": "P",
+   "life": [
+    "노년"
+   ],
+   "age_min": 60,
+   "age_max": null,
+   "age_evidence": "60세 이상",
+   "household": [],
+   "income_type": "중위소득기준",
+   "income_median_pct": 120,
+   "income_evidence": "해당연도 건강보험료 기준 중위소득 120%이하",
+   "region_type": "거주지한정",
+   "region_name": "거제시",
+   "region_evidence": "신청일 기준 주민등록상 1년 이상 거제시에 주소를 둔",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "신청일 기준 주민등록상 거제시에 1년 이상 주소를 둔 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 기준 주민등록상 1년 이상 거제시에 주소를 둔"
+    },
+    {
+     "text": "60세 이상",
+     "join": "AND",
+     "exception": false,
+     "evidence": "60세 이상"
+    },
+    {
+     "text": "해당연도 건강보험료 기준 중위소득 120% 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "해당연도 건강보험료 기준 중위소득 120%이하"
+    },
+    {
+     "text": "정형외과 전문의에게 무릎인공관절 치환술 진단을 받은 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "정형외과 전문의에게 무릎인공관절 치환술 진단을 받은 자"
+    }
+   ],
+   "unknown_fields": [
+    "age_max",
+    "household"
+   ]
+  }
+ }
+}

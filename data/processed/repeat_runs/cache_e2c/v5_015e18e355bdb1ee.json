@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 12.7,
+ "result": {
+  "type_no": "5",
+  "type_reason": "출산가정의 산후조리 비용 부담을 줄이는 목적과 대상이 5번에 가깝다. 다만 산후조리비 실비 지원이 산모·신생아 건강관리서비스 본인부담금 지원에 해당하는지는 담당자 확인이 필요하다.",
+  "type_evidence": "차상위계층 산후조리비용 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "[지원대상] 차상위계층 산모 * 출산일 기준, 신생아의 부 또는 모가 삼척시에 주민등록이 되어 있는 차상위계층 가구",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "가까움"
+ }
+}

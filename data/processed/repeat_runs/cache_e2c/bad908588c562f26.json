@@ -1,0 +1,164 @@
+{
+ "backend": "codex",
+ "sec": 47.6,
+ "result": {
+  "target": "최근 입원치료 및 국가 일반건검진을 실시한 근로 및 사업소득자로 다음 조건을 모두 만족하는 서울시민",
+  "content": "입원, 입원연계 외래진료, 국가 일반건강검진(1차) 시 연 최대 14일 생활비를 지원합니다.",
+  "criteria": "(소득) 본인과 가구원 합산 기준중위소득 100% 이하 - (거주)입원일, 입원연계 외래진료일, 국가 일반건강검진일 기준 30일 전부터 주민등록상 서울시 거주(지원금 수령시점까지 주민등록상 서울시 거주)",
+  "amount_won": 1357440,
+  "cycle": "연",
+  "region": "입원일, 입원연계 외래진료일, 국가 일반건강검진일 기준 30일 전부터 주민등록상 서울시 거주(지원금 수령시점까지 주민등록상 서울시 거주)",
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "중위소득기준",
+   "income_median_pct": 100,
+   "income_evidence": "본인과 가구원 합산 기준중위소득 100% 이하",
+   "region_type": "거주지한정",
+   "region_name": "서울시",
+   "region_evidence": "기준 30일 전부터 주민등록상 서울시 거주",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "최근 입원치료 또는 국가 일반건강검진을 실시한 근로 및 사업소득자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "최근 입원치료 및 국가 일반건검진을 실시한 근로 및 사업소득자"
+    },
+    {
+     "text": "입원·건강검진 전월 포함 이전 3개월간과 당월 1일부터 전날까지 총 24일 이상 근무",
+     "join": "OR",
+     "exception": false,
+     "evidence": "총 24일 이상 근무"
+    },
+    {
+     "text": "입원·건강검진 전월 포함 이전 3개월간과 당월 1일부터 전날까지 45일 이상 사업장 유지",
+     "join": "OR",
+     "exception": false,
+     "evidence": "45일 이상 사업장 유지"
+    },
+    {
+     "text": "건강검진은 국가 국민건강보험공단 1차 일반건강검진에 한정",
+     "join": "AND",
+     "exception": false,
+     "evidence": "국가(국민건강보험공단) 1차 일반건강검진만 해당"
+    },
+    {
+     "text": "2차 건강검진 및 암검진 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "2차 건강검진, 암검진 제외"
+    },
+    {
+     "text": "퇴원일 또는 건강검진일로부터 180일 이내 신청",
+     "join": "AND",
+     "exception": false,
+     "evidence": "퇴원일 또는 건강검진일로부터 180일 이내"
+    },
+    {
+     "text": "입원·입원연계 외래진료·국가 일반건강검진 기간 국민건강보험 지역가입자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "입원·입원연계 외래진료·국가 일반건강검진 기간 국민건강보험 지역가입자"
+    },
+    {
+     "text": "본인과 가구원 합산 재산 4억 원 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "(재산) 본인과 가구원 합산 4억원 이하"
+    },
+    {
+     "text": "재산은 시가 표준액 합산액으로 산정하며 금융재산 및 자동차는 미포함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "재산 시가 표준액 합산액"
+    },
+    {
+     "text": "신청자 및 가구원 합산 소득이 당해 연도 가구별 기준 중위소득 100% 이하",
+     "join": "AND",
+     "exception": false,
+     "evidence": "가구별 기준 중위소득 100%이하(신청자 및 가구원 합산)"
+    },
+    {
+     "text": "소득은 근로소득·사업소득·재산소득·이전소득을 합산한 실제소득으로 산정",
+     "join": "AND",
+     "exception": false,
+     "evidence": "실제소득(근로소득, 사업소득, 재산소득, 이전소득을 합산한 금액)"
+    },
+    {
+     "text": "입원일·입원연계 외래진료일·국가 일반건강검진일 기준 30일 전부터 지원금 수령시점까지 주민등록상 서울시 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "기준 30일 전부터 주민등록상 서울시 거주"
+    },
+    {
+     "text": "국민기초생활보장·서울형 기초보장·국가형 및 서울형 긴급복지지원 생계급여 수혜자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "생계급여(국민기초생활보장,서울형 기초보장,국가형·서울형 긴급복지지원)"
+    },
+    {
+     "text": "실업급여 수혜자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "실업급여"
+    },
+    {
+     "text": "산재보험급여 수혜자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "산재보험급여 수혜자"
+    },
+    {
+     "text": "치료목적이 아닌 미용·성형·출산·요양목적 입원 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "치료목적이 아닌 미용,성형,출산,요양목적 입원"
+    },
+    {
+     "text": "요양병원 또는 조산원 입원 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "요양병원,조산원 입원"
+    },
+    {
+     "text": "법인사업자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "법인사업자"
+    },
+    {
+     "text": "임대사업자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "임대사업자"
+    },
+    {
+     "text": "외국국적자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "외국국적자"
+    },
+    {
+     "text": "사망자 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "사망자"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household"
+   ]
+  }
+ }
+}

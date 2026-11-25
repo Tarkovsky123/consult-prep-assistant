@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 17.4,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "산후조리비용 실비 지원은 목록에 동일한 급여 항목이 없다. 5번은 산모·신생아 건강관리서비스 본인부담금 지원으로, 사업안에 해당 서비스 비용이라는 명시가 없어 선택하지 않는다.",
+  "type_evidence": "차상위계층 산후조리비용 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

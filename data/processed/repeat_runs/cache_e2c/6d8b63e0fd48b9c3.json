@@ -1,0 +1,57 @@
+{
+ "backend": "codex",
+ "sec": 21.9,
+ "result": {
+  "target": "도내 어린이집 재원 중인 미등록 이주배경 아동",
+  "content": "보육지원금 월 10만원/1인 (어린이집 직접 지원)",
+  "criteria": "2026년 시행시군: 화성시, 안성시, 이천시",
+  "amount_won": 100000,
+  "cycle": "월",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [
+    "아동"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "도내 어린이집에 재원 중일 것",
+     "join": "AND",
+     "exception": false,
+     "evidence": "도내 어린이집 재원 중인"
+    },
+    {
+     "text": "미등록 이주배경 아동일 것",
+     "join": "AND",
+     "exception": false,
+     "evidence": "미등록 이주배경 아동"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_type",
+    "region_name",
+    "region_evidence"
+   ]
+  }
+ }
+}

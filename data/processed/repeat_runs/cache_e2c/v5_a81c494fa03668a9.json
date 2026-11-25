@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 13.7,
+ "result": {
+  "type_no": "13",
+  "type_reason": "아이돌봄서비스 본인부담금 추가지원으로 13번과 급여 항목이 같다. 이용 아동의 연령이 명시되지 않아 영유아 대상 범위 충족 여부는 확인이 필요하다.",
+  "type_evidence": "아이돌봄 서비스 본인부담금 추가지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "확인불가",
+  "target_evidence": "[지원대상] 아이돌봄 서비스를 이용하는 가정",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

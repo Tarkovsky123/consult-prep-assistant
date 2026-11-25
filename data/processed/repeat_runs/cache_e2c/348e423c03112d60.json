@@ -1,0 +1,61 @@
+{
+ "backend": "codex",
+ "sec": 21.6,
+ "result": {
+  "target": "횡성군에 주소를 둔 초4 ~ 고4 (2026년 기준)",
+  "content": "초 3만원 중 5만원 고 7만원",
+  "criteria": "횡성군에 주소를 둔 청소년 초 4~ 고3",
+  "amount_won": 70000,
+  "cycle": "미상",
+  "region": "횡성군에 주소를 둔",
+  "item": {
+   "id": "P",
+   "life": [
+    "아동",
+    "청소년"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "횡성군",
+   "region_evidence": "횡성군에 주소를 둔",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "횡성군에 주소를 두어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "횡성군에 주소를 둔"
+    },
+    {
+     "text": "지원대상에 기재된 학년은 초4~고4(2026년 기준)이며 선정기준의 학년 범위와 불일치함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "초4 ~ 고4 (2026년 기준)"
+    },
+    {
+     "text": "선정기준에 기재된 학년은 초4~고3이며 지원대상의 학년 범위와 불일치함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "청소년 초 4~ 고3"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

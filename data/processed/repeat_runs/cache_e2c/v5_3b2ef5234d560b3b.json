@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 14.1,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "어린이집 보육료를 바우처로 지원하는 사업으로, 같은 급여 항목의 유형이 없다. 13번 아이돌봄서비스 본인부담금은 지원하는 서비스가 달라 가까운 유형으로 보기 어렵다.",
+  "type_evidence": "지원내용 : 보육료 지원  - 0~2세 :  영아 부모 보육료의 30% 지원  - 3~5세 유아 : 누리과정 보육료의 30%지원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "기타 특정대상—외국인 대상 사업",
+  "exclude_evidence": "도내에 90일을 초과하여 거주하는 외국인 자녀(체류 등록) 중 도내 어린이집 재원 시(*불법체류자, 미등록자 등 제외)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

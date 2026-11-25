@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 14.2,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 외국국적 유아의 유치원 학비 추가지원금과 무상교육비이며, 유형목록에 같은 급여 항목이 없다.",
+  "type_evidence": "[지원내용] 1. 추가지원금- 공사립 3~5세 외국국적 유아: 월5만원2. 무상교육비-공립 4~5세 외국국적 유아: 월2만원-사립 4~5세 외국국적 유아: 월11만원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "기타 특정대상 — 외국인 대상 사업",
+  "exclude_evidence": "[지원대상] - 국·공립 및 사립유치원에 다니는 외국국적 3～5세 유아- 등록 외국인에 한하여 지원(외국인등록증 必)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

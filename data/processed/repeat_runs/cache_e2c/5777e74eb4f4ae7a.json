@@ -1,0 +1,58 @@
+{
+ "backend": "codex",
+ "sec": 25.0,
+ "result": {
+  "target": "차상위계층 산모 * 출산일 기준, 신생아의 부 또는 모가 삼척시에 주민등록이 되어 있는 차상위계층 가구",
+  "content": "차상위계층 출산가구를 대상으로 최대 700천원 지원(실비 지원)",
+  "criteria": "기준중위소득 65% 이내",
+  "amount_won": 700000,
+  "cycle": "미상",
+  "region": "출산일 기준, 신생아의 부 또는 모가 삼척시에 주민등록이 되어 있는",
+  "item": {
+   "id": "P",
+   "life": [
+    "임신·출산"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [
+    "저소득"
+   ],
+   "income_type": "중위소득기준",
+   "income_median_pct": 65,
+   "income_evidence": "기준중위소득 65% 이내",
+   "region_type": "거주지한정",
+   "region_name": "삼척시",
+   "region_evidence": "출산일 기준, 신생아의 부 또는 모가 삼척시에 주민등록이 되어 있는",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "차상위계층 산모",
+     "join": "AND",
+     "exception": false,
+     "evidence": "차상위계층 산모"
+    },
+    {
+     "text": "출산일 기준 신생아의 부 또는 모가 삼척시에 주민등록되어 있어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "출산일 기준, 신생아의 부 또는 모가 삼척시에 주민등록이 되어 있는"
+    },
+    {
+     "text": "기준중위소득 65% 이내",
+     "join": "AND",
+     "exception": false,
+     "evidence": "기준중위소득 65% 이내"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence"
+   ]
+  }
+ }
+}

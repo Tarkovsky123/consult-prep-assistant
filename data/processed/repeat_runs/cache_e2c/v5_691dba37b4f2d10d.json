@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 12.4,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "대상포진 예방접종 백신 지원과 급여 항목이 같은 신속협의 유형이 없다. 목록의 검사비·치료비 지원은 예방접종과 목적 및 급여 항목이 달라 가까운 유형에도 해당하지 않는다.",
+  "type_evidence": "[지원내용] 대상포진 예방접종 백신 지원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "국가적 피해자·재난 예방",
+  "exclude_evidence": "[지원내용] 대상포진 예방접종 백신 지원",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

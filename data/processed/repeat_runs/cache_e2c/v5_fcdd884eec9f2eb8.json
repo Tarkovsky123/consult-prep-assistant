@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 12.5,
+ "result": {
+  "type_no": "37",
+  "type_reason": "전세대출의 실제 납부 이자를 지원하므로 37번 전·월세 보증금 대출이자 지원사업과 급여 항목이 같다. 부부합산 연소득 1억원 기준이 중위소득 180% 이하에 해당하는지와 본인 의무부담 금리 조건은 확인이 필요하다.",
+  "type_evidence": "[지원내용] 전세대출 실제 이자납부액 기준 월 최대 15만원 이내",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "확인불가",
+  "target_evidence": "혼인기준 : 혼인신고 7년 이내소득기준 : 부부 합산 연소득 1억원 이하",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

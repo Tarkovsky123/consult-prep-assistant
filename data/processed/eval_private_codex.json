@@ -1,0 +1,446 @@
+{
+  "source": "private",
+  "backend": "codex",
+  "n": 40,
+  "fields": {
+    "life": {
+      "raw_exact": 0.25,
+      "norm_exact": 0.725,
+      "norm_jaccard": 0.792,
+      "tag_exact": 0.55,
+      "tag_jaccard": 0.637
+    },
+    "household": {
+      "raw_exact": 0.4,
+      "norm_exact": 0.45,
+      "norm_jaccard": 0.5,
+      "tag_exact": 0.35,
+      "tag_jaccard": 0.396
+    },
+    "income_type": {
+      "raw_exact": 0.65,
+      "norm_exact": 0.85,
+      "norm_jaccard": 0.85,
+      "tag_exact": null,
+      "tag_jaccard": null
+    },
+    "income_median_pct": {
+      "raw_exact": 1.0,
+      "norm_exact": 1.0,
+      "norm_jaccard": 1.0,
+      "tag_exact": null,
+      "tag_jaccard": null
+    },
+    "region_type": {
+      "raw_exact": 0.9,
+      "norm_exact": 0.9,
+      "norm_jaccard": 0.9,
+      "tag_exact": null,
+      "tag_jaccard": null
+    },
+    "support_form": {
+      "raw_exact": 0.8,
+      "norm_exact": 0.825,
+      "norm_jaccard": 0.883,
+      "tag_exact": null,
+      "tag_jaccard": null
+    }
+  },
+  "disagreements": [
+    {
+      "id": "PRV0322",
+      "field": "life",
+      "gold": "아동;청소년",
+      "pred": [
+        "아동",
+        "청소년",
+        "청년"
+      ]
+    },
+    {
+      "id": "PRV0008",
+      "field": "life",
+      "gold": "청년",
+      "pred": []
+    },
+    {
+      "id": "PRV0033",
+      "field": "life",
+      "gold": "아동;청소년",
+      "pred": [
+        "아동"
+      ]
+    },
+    {
+      "id": "PRV0015",
+      "field": "life",
+      "gold": "아동;청소년",
+      "pred": [
+        "아동"
+      ]
+    },
+    {
+      "id": "PRV0184",
+      "field": "life",
+      "gold": "아동;청소년",
+      "pred": [
+        "영유아",
+        "아동",
+        "청소년"
+      ]
+    },
+    {
+      "id": "PRV0240",
+      "field": "life",
+      "gold": "미상",
+      "pred": [
+        "아동"
+      ]
+    },
+    {
+      "id": "PRV0074",
+      "field": "life",
+      "gold": "미상",
+      "pred": [
+        "아동"
+      ]
+    },
+    {
+      "id": "PRV0007",
+      "field": "life",
+      "gold": "청년",
+      "pred": []
+    },
+    {
+      "id": "PRV0230",
+      "field": "life",
+      "gold": "아동;청소년;청년",
+      "pred": [
+        "아동"
+      ]
+    },
+    {
+      "id": "PRV0117",
+      "field": "life",
+      "gold": "미상",
+      "pred": [
+        "노년"
+      ]
+    },
+    {
+      "id": "PRV0046",
+      "field": "life",
+      "gold": "미상",
+      "pred": [
+        "아동",
+        "청소년",
+        "노년"
+      ]
+    },
+    {
+      "id": "PRV0068",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "저소득"
+      ]
+    },
+    {
+      "id": "PRV0322",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "저소득"
+      ]
+    },
+    {
+      "id": "PRV0185",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "한부모·조손",
+        "기타"
+      ]
+    },
+    {
+      "id": "PRV0303",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "다문화·탈북민"
+      ]
+    },
+    {
+      "id": "PRV0100",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "한부모·조손"
+      ]
+    },
+    {
+      "id": "PRV0033",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0279",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "저소득"
+      ]
+    },
+    {
+      "id": "PRV0015",
+      "field": "household",
+      "gold": "저소득",
+      "pred": [
+        "저소득",
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0163",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "다문화·탈북민"
+      ]
+    },
+    {
+      "id": "PRV0134",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0184",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0240",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0238",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "다문화·탈북민"
+      ]
+    },
+    {
+      "id": "PRV0289",
+      "field": "household",
+      "gold": "저소득",
+      "pred": [
+        "장애인",
+        "저소득"
+      ]
+    },
+    {
+      "id": "PRV0300",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "다문화·탈북민"
+      ]
+    },
+    {
+      "id": "PRV0293",
+      "field": "household",
+      "gold": "미상",
+      "pred": [
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0321",
+      "field": "household",
+      "gold": "저소득",
+      "pred": [
+        "저소득",
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0007",
+      "field": "household",
+      "gold": "저소득",
+      "pred": []
+    },
+    {
+      "id": "PRV0042",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "다문화·탈북민"
+      ]
+    },
+    {
+      "id": "PRV0230",
+      "field": "household",
+      "gold": "저소득",
+      "pred": [
+        "저소득",
+        "한부모·조손"
+      ]
+    },
+    {
+      "id": "PRV0117",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "저소득",
+        "장애인"
+      ]
+    },
+    {
+      "id": "PRV0046",
+      "field": "household",
+      "gold": null,
+      "pred": [
+        "저소득",
+        "장애인",
+        "1인가구",
+        "기타"
+      ]
+    },
+    {
+      "id": "PRV0054",
+      "field": "income_type",
+      "gold": "소득무관",
+      "pred": "미상"
+    },
+    {
+      "id": "PRV0141",
+      "field": "income_type",
+      "gold": "미상",
+      "pred": "기타소득기준"
+    },
+    {
+      "id": "PRV0279",
+      "field": "income_type",
+      "gold": "미상",
+      "pred": "기초생활수급"
+    },
+    {
+      "id": "PRV0195",
+      "field": "income_type",
+      "gold": "기초생활수급;차상위",
+      "pred": "기타소득기준"
+    },
+    {
+      "id": "PRV0117",
+      "field": "income_type",
+      "gold": "미상",
+      "pred": "차상위"
+    },
+    {
+      "id": "PRV0046",
+      "field": "income_type",
+      "gold": "미상",
+      "pred": "기타소득기준"
+    },
+    {
+      "id": "PRV0054",
+      "field": "region_type",
+      "gold": "지역무관",
+      "pred": "미상"
+    },
+    {
+      "id": "PRV0210",
+      "field": "region_type",
+      "gold": "지역무관",
+      "pred": "미상"
+    },
+    {
+      "id": "PRV0195",
+      "field": "region_type",
+      "gold": "미상",
+      "pred": "지역무관"
+    },
+    {
+      "id": "PRV0117",
+      "field": "region_type",
+      "gold": "미상",
+      "pred": "거주지한정"
+    },
+    {
+      "id": "PRV0008",
+      "field": "support_form",
+      "gold": "현금",
+      "pred": [
+        "현금",
+        "현물"
+      ]
+    },
+    {
+      "id": "PRV0240",
+      "field": "support_form",
+      "gold": "미상",
+      "pred": [
+        "현물"
+      ]
+    },
+    {
+      "id": "PRV0195",
+      "field": "support_form",
+      "gold": "현금;현물;서비스",
+      "pred": [
+        "현금",
+        "현물"
+      ]
+    },
+    {
+      "id": "PRV0043",
+      "field": "support_form",
+      "gold": "바우처,이용권",
+      "pred": [
+        "서비스"
+      ]
+    },
+    {
+      "id": "PRV0042",
+      "field": "support_form",
+      "gold": "현금",
+      "pred": [
+        "현물",
+        "현금"
+      ]
+    },
+    {
+      "id": "PRV0117",
+      "field": "support_form",
+      "gold": "미상",
+      "pred": [
+        "서비스"
+      ]
+    },
+    {
+      "id": "PRV0046",
+      "field": "support_form",
+      "gold": "현금;서비스",
+      "pred": [
+        "현금",
+        "현물",
+        "서비스"
+      ]
+    }
+  ],
+  "evidence_fail_rate": 0.0
+}

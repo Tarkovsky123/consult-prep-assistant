@@ -1,0 +1,72 @@
+{
+ "backend": "codex",
+ "sec": 24.7,
+ "result": {
+  "target": "입학일 기준 성남시에 주민등록(외국인은 체류지등록)이 되어있는 2026학년도 초등학교 신입생",
+  "content": "1인당  모바일 성남사랑상품권 20만원 지급",
+  "criteria": "지원대상(입학일 기준 성남시에 주민등록 되어 있는 2026학년도 초등학교 신입생)의 부모 또는 보호자※ 보호자는 대상자와 주민등록이 같이 등재되어 있고, 대상자를 사실상 보호 양육하는 자",
+  "amount_won": 200000,
+  "cycle": "미상",
+  "region": "입학일 기준 성남시에 주민등록(외국인은 체류지등록)이 되어있는",
+  "item": {
+   "id": "P",
+   "life": [
+    "아동"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "성남시",
+   "region_evidence": "입학일 기준 성남시에 주민등록(외국인은 체류지등록)이 되어있는",
+   "support_form": [
+    "바우처·이용권"
+   ],
+   "conditions": [
+    {
+     "text": "입학일 기준 성남시에 주민등록되어 있어야 하며, 외국인은 체류지등록이 되어 있어야 한다.",
+     "join": "AND",
+     "exception": false,
+     "evidence": "입학일 기준 성남시에 주민등록(외국인은 체류지등록)이 되어있는"
+    },
+    {
+     "text": "2026학년도 초등학교 신입생이어야 한다.",
+     "join": "AND",
+     "exception": false,
+     "evidence": "2026학년도 초등학교 신입생"
+    },
+    {
+     "text": "지원대상의 부모 또는 보호자여야 한다.",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부모 또는 보호자"
+    },
+    {
+     "text": "보호자는 대상자와 주민등록이 같이 등재되어 있어야 한다.",
+     "join": "AND",
+     "exception": false,
+     "evidence": "보호자는 대상자와 주민등록이 같이 등재되어 있고"
+    },
+    {
+     "text": "보호자는 대상자를 사실상 보호 양육해야 한다.",
+     "join": "AND",
+     "exception": false,
+     "evidence": "대상자를 사실상 보호 양육하는 자"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

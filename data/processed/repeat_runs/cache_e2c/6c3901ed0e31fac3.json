@@ -1,0 +1,70 @@
+{
+ "backend": "codex",
+ "sec": 26.2,
+ "result": {
+  "target": "도내에 90일을 초과하여 거주하는 외국인 자녀(체류 등록) 중 도내 어린이집 재원 시(*불법체류자, 미등록자 등 제외)",
+  "content": "아이행복카드(바우처) 지원",
+  "criteria": "도내에 90일을 초과하여 거주하는 외국인 자녀(체류 등록) 중 도내 어린이집 재원 시(*불법체류자, 미등록자 등 제외)",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "도내에 90일을 초과하여 거주하는",
+  "item": {
+   "id": "P",
+   "life": [
+    "영유아"
+   ],
+   "age_min": 0,
+   "age_max": 5,
+   "age_evidence": "0~2세 :  영아 부모 보육료의 30% 지원  - 3~5세 유아",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": null,
+   "region_evidence": "도내에 90일을 초과하여 거주하는",
+   "support_form": [
+    "바우처·이용권"
+   ],
+   "conditions": [
+    {
+     "text": "도내 거주기간 90일 초과",
+     "join": "AND",
+     "exception": false,
+     "evidence": "도내에 90일을 초과하여 거주하는"
+    },
+    {
+     "text": "체류 등록된 외국인 자녀",
+     "join": "AND",
+     "exception": false,
+     "evidence": "외국인 자녀(체류 등록)"
+    },
+    {
+     "text": "도내 어린이집 재원",
+     "join": "AND",
+     "exception": false,
+     "evidence": "도내 어린이집 재원 시"
+    },
+    {
+     "text": "0~2세 또는 3~5세 유아",
+     "join": "AND",
+     "exception": false,
+     "evidence": "0~2세 :  영아 부모 보육료의 30% 지원  - 3~5세 유아"
+    },
+    {
+     "text": "불법체류자, 미등록자 등 제외",
+     "join": "OR",
+     "exception": true,
+     "evidence": "불법체류자, 미등록자 등 제외"
+    }
+   ],
+   "unknown_fields": [
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_name"
+   ]
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "backend": "codex",
+ "sec": 24.4,
+ "result": {
+  "target": "난임부부 중 여성",
+  "content": "난임 시술 차수당 최대 10만원 지원(연 60만원)",
+  "criteria": "- 신청일 기준 해남군에 주민등록을 두고 있는 경우- 2026. 1. 1. 이후 난임부부 시술비 지원결정통지서(전남형 포함) 받은 자로, 실제 난임 시술을 받았거나 의학적 판단 또는  개인적 사유에 따라 불가피하게 시술 실패 또는 중단되어 시술확인서가 발급된 경우",
+  "amount_won": 600000,
+  "cycle": "연",
+  "region": "신청일 기준 해남군에 주민등록을 두고 있는 경우",
+  "item": {
+   "id": "P",
+   "life": [
+    "임신·출산"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "해남군",
+   "region_evidence": "신청일 기준 해남군에 주민등록을 두고 있는 경우",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "난임부부 중 여성",
+     "join": "AND",
+     "exception": false,
+     "evidence": "난임부부 중 여성"
+    },
+    {
+     "text": "신청일 기준 해남군에 주민등록을 두고 있는 경우",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 기준 해남군에 주민등록을 두고 있는 경우"
+    },
+    {
+     "text": "2026. 1. 1. 이후 난임부부 시술비 지원결정통지서(전남형 포함)를 받은 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "2026. 1. 1. 이후 난임부부 시술비 지원결정통지서(전남형 포함) 받은 자"
+    },
+    {
+     "text": "실제 난임 시술을 받았거나, 의학적 판단 또는 개인적 사유에 따라 불가피하게 시술 실패 또는 중단되어 시술확인서가 발급된 경우",
+     "join": "AND",
+     "exception": false,
+     "evidence": "실제 난임 시술을 받았거나 의학적 판단 또는  개인적 사유에 따라 불가피하게 시술 실패 또는 중단되어 시술확인서가 발급된 경우"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

@@ -1,0 +1,75 @@
+{
+ "backend": "codex",
+ "sec": 27.5,
+ "result": {
+  "target": "종로구에 거주하는 미취업 청년(만19~39세)을 대상으로 지원합니다.",
+  "content": "당해연도 응시한 시험 대상 1인 연1회 최대 10만원 실비 지원",
+  "criteria": "종로구에 거주하는 미취업 청년(만19~39세)을 대상으로 지원합니다.ㅇ 사업자등록사실 없음ㅇ 건강보험 직장가입사실 없음ㅇ 종로구 거주",
+  "amount_won": 100000,
+  "cycle": "연",
+  "region": "종로구에 거주하는",
+  "item": {
+   "id": "P",
+   "life": [
+    "청년"
+   ],
+   "age_min": 19,
+   "age_max": 39,
+   "age_evidence": "만19~39세",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "종로구",
+   "region_evidence": "종로구 거주",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "종로구 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "종로구 거주"
+    },
+    {
+     "text": "만 19~39세",
+     "join": "AND",
+     "exception": false,
+     "evidence": "만19~39세"
+    },
+    {
+     "text": "미취업 청년",
+     "join": "AND",
+     "exception": false,
+     "evidence": "미취업 청년"
+    },
+    {
+     "text": "사업자등록사실 없음",
+     "join": "AND",
+     "exception": false,
+     "evidence": "사업자등록사실 없음"
+    },
+    {
+     "text": "건강보험 직장가입사실 없음",
+     "join": "AND",
+     "exception": false,
+     "evidence": "건강보험 직장가입사실 없음"
+    },
+    {
+     "text": "당해연도 응시한 시험",
+     "join": "AND",
+     "exception": false,
+     "evidence": "당해연도 응시한 시험 대상"
+    }
+   ],
+   "unknown_fields": [
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

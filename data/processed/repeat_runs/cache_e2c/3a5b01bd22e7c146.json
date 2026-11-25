@@ -1,0 +1,68 @@
+{
+ "backend": "codex",
+ "sec": 28.7,
+ "result": {
+  "target": "영아 출생일 기준, 6개월 전부터 계속하여 군에 주민등록을 두고 거주하며, 영아를 군에 출생등록 한 부 또는 모",
+  "content": "- 첫째아: 100만원(1회)- 둘째아: 200만원(연 100만원*2년간)- 셋째아: 1,080만원(연 120만원*4년, 연300만원*2년)* 둘째아 이상 정기분의 경우 지원기간 동안 계속하여 군에 주민등록을 두고 거주해야 함",
+  "criteria": "영아 출생일 기준, 6개월 전부터 계속하여 군에 주민등록을 두고 거주하며, 영아를 군에 출생등록 한 부 또는 모* 이혼 및 재혼 등으로 출생 순위 산정이 필요한 경우 이를 증명할 수 있는 가족관계증명서 등 제출",
+  "amount_won": 10800000,
+  "cycle": "연",
+  "region": "군에 주민등록을 두고 거주하며",
+  "item": {
+   "id": "P",
+   "life": [
+    "영유아",
+    "임신·출산"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": null,
+   "region_evidence": "군에 주민등록을 두고 거주하며",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "영아 출생일 기준 6개월 전부터 계속하여 군에 주민등록을 두고 거주해야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "영아 출생일 기준, 6개월 전부터 계속하여 군에 주민등록을 두고 거주하며"
+    },
+    {
+     "text": "영아를 군에 출생등록한 부 또는 모여야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "영아를 군에 출생등록 한 부 또는 모"
+    },
+    {
+     "text": "이혼 및 재혼 등으로 출생 순위 산정이 필요한 경우 증명 서류를 제출해야 함",
+     "join": "AND",
+     "exception": true,
+     "evidence": "이혼 및 재혼 등으로 출생 순위 산정이 필요한 경우 이를 증명할 수 있는 가족관계증명서 등 제출"
+    },
+    {
+     "text": "둘째아 이상 정기분은 지원기간 동안 계속하여 군에 주민등록을 두고 거주해야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "둘째아 이상 정기분의 경우 지원기간 동안 계속하여 군에 주민등록을 두고 거주해야 함"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_name"
+   ]
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 14.0,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "졸업앨범비 지원과 급여 항목이 같은 유형이 없습니다. 9번의 출생아 사진 촬영·앨범구매비와는 지원 항목의 목적과 내용이 다릅니다.",
+  "type_evidence": "졸업앨범비 지원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "전국 정착 교육·보육·보호아동·문화",
+  "exclude_evidence": "졸업앨범비 지원",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

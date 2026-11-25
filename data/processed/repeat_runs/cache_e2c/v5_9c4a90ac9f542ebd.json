@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 13.6,
+ "result": {
+  "type_no": "13",
+  "type_reason": "아이돌봄서비스 본인부담금을 지원하므로 13번과 급여 항목이 같다. 다만 만 12세 이하 아동은 유형의 대상인 영유아보다 넓다.",
+  "type_evidence": "[지원내용] -아이돌봄서비스 소득기준 유형에 따라 본인부담금 50% 지원-본인부담금 선납 이용 후 익월 환급",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "밖",
+  "target_evidence": "[지원대상] 부모의 맞벌이 등으로 양육공백이 발생한 가정의 만 12세 이하 아동",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

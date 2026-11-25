@@ -1,0 +1,79 @@
+{
+ "backend": "codex",
+ "sec": 29.8,
+ "result": {
+  "target": "1인 자영업자, 프리랜서, 특수형태근로자, 농업인 등 소득활동을 하나 고용보험 출산휴가급여를 받을 수 없는 출산여성",
+  "content": "- 단태아 90만원, 다태아 170만원 지원- 유산, 사산의 경우 임신 기간에 따라 차등 지원(18~170만원)",
+  "criteria": "아래 조건 모두 충족1. 고용노동부 '고용보험 미적용자ㅐ 출산급여' 를 지원받은 출산여성2. 출산일(유산, 사산일) 및 신청일 현재 출산여성이 시에 주민등록을 두고 거주할 것3. 신청일 현재 출생자녀가 시에 주민등록을 두고 거주할 것4. 출생한 자녀의 출생신고를 시에 하였을 것",
+  "amount_won": 1700000,
+  "cycle": "미상",
+  "region": "출산일(유산, 사산일) 및 신청일 현재 출산여성이 시에 주민등록을 두고 거주할 것",
+  "item": {
+   "id": "P",
+   "life": [
+    "임신·출산"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": null,
+   "region_evidence": "출산여성이 시에 주민등록을 두고 거주할 것",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "1인 자영업자, 프리랜서, 특수형태근로자, 농업인 등 소득활동을 하는 출산여성",
+     "join": "AND",
+     "exception": false,
+     "evidence": "1인 자영업자, 프리랜서, 특수형태근로자, 농업인 등 소득활동을 하나"
+    },
+    {
+     "text": "고용보험 출산휴가급여를 받을 수 없는 출산여성",
+     "join": "AND",
+     "exception": false,
+     "evidence": "고용보험 출산휴가급여를 받을 수 없는 출산여성"
+    },
+    {
+     "text": "고용노동부 고용보험 미적용자 출산급여를 지원받았을 것",
+     "join": "AND",
+     "exception": false,
+     "evidence": "고용노동부 '고용보험 미적용자ㅐ 출산급여' 를 지원받은 출산여성"
+    },
+    {
+     "text": "출산일(유산, 사산일) 및 신청일 현재 출산여성이 시에 주민등록을 두고 거주할 것",
+     "join": "AND",
+     "exception": false,
+     "evidence": "출산일(유산, 사산일) 및 신청일 현재 출산여성이 시에 주민등록을 두고 거주할 것"
+    },
+    {
+     "text": "신청일 현재 출생자녀가 시에 주민등록을 두고 거주할 것",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 현재 출생자녀가 시에 주민등록을 두고 거주할 것"
+    },
+    {
+     "text": "출생한 자녀의 출생신고를 시에 하였을 것",
+     "join": "AND",
+     "exception": false,
+     "evidence": "출생한 자녀의 출생신고를 시에 하였을 것"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence",
+    "region_name"
+   ]
+  }
+ }
+}

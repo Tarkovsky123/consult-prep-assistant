@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 14.7,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "대상포진 예방접종 비용 지원과 급여 항목이 같은 유형이 없습니다. 목록의 검사·치료·수술비 지원은 목적이 달라 가까운 유형으로도 보기 어렵습니다.",
+  "type_evidence": "❍ 확대대상 : 함평군에 1년이상 주소지(주민등록상)를 둔 연 나이 60세 이상 함평군민 (단, 과거 대상포진 접종 이력이 있는 경우는 제외) 2만원으로 접종 (약 6만원정도 지원)",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "국가적 피해자·재난 예방 — 예방접종",
+  "exclude_evidence": "❍ 확대대상 : 함평군에 1년이상 주소지(주민등록상)를 둔 연 나이 60세 이상 함평군민 (단, 과거 대상포진 접종 이력이 있는 경우는 제외) 2만원으로 접종 (약 6만원정도 지원)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null,
+  "type_match": null
+ }
+}

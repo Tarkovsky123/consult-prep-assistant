@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 12.8,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "첫째아부터 지급하는 출산장려금이므로, 2자녀 이상 다자녀 사업에만 적용하는 6번에 해당하지 않는다. 다른 유형에도 같은 급여 항목이 없다.",
+  "type_evidence": "[지원내용] - 첫째아: 100만원(1회)- 둘째아: 200만원(연 100만원*2년간)- 셋째아: 1,080만원(연 120만원*4년, 연300만원*2년)",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 13.5,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "어린이집 보육료 지원과 급여 항목이 같은 신속협의 유형이 없다. 아이돌봄서비스 본인부담금이나 다함께돌봄센터 이용료와는 지원 비용의 종류가 다르다.",
+  "type_evidence": "[지원내용] 경상남도 어린이집 재원 외국인 영유아(0~5세) 보육료 지원",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "기타 특정대상: 외국인 대상 사업",
+  "exclude_evidence": "[지원내용] 경상남도 어린이집 재원 외국인 영유아(0~5세) 보육료 지원",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

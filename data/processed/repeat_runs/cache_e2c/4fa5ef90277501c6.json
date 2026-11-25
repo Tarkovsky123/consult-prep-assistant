@@ -1,0 +1,71 @@
+{
+ "backend": "codex",
+ "sec": 24.3,
+ "result": {
+  "target": "아이돌봄 서비스를 이용하는 가정",
+  "content": "가형(중위소득75%이하) : 100%지원 나형(중위소득 120%이하) : 80% 지원다형(중위소득 150%이하) : 70% 지원 라형(중위소득150%초과) : 60% 지원",
+  "criteria": "가형(중위소득75%이하) : 100%지원 나형(중위소득 120%이하) : 80% 지원다형(중위소득 150%이하) : 70% 지원 라형(중위소득150%초과) : 60% 지원",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": null,
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "중위소득기준",
+   "income_median_pct": null,
+   "income_evidence": "가형(중위소득75%이하)",
+   "region_type": "미상",
+   "region_name": null,
+   "region_evidence": null,
+   "support_form": [],
+   "conditions": [
+    {
+     "text": "아이돌봄 서비스를 이용하는 가정",
+     "join": "AND",
+     "exception": false,
+     "evidence": "아이돌봄 서비스를 이용하는 가정"
+    },
+    {
+     "text": "가형: 중위소득 75% 이하, 100% 지원",
+     "join": "OR",
+     "exception": false,
+     "evidence": "가형(중위소득75%이하) : 100%지원"
+    },
+    {
+     "text": "나형: 중위소득 120% 이하, 80% 지원",
+     "join": "OR",
+     "exception": false,
+     "evidence": "나형(중위소득 120%이하) : 80% 지원"
+    },
+    {
+     "text": "다형: 중위소득 150% 이하, 70% 지원",
+     "join": "OR",
+     "exception": false,
+     "evidence": "다형(중위소득 150%이하) : 70% 지원"
+    },
+    {
+     "text": "라형: 중위소득 150% 초과, 60% 지원",
+     "join": "OR",
+     "exception": false,
+     "evidence": "라형(중위소득150%초과) : 60% 지원"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_median_pct",
+    "region_type",
+    "region_name",
+    "region_evidence",
+    "support_form"
+   ]
+  }
+ }
+}

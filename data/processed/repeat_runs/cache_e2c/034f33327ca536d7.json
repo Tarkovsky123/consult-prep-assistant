@@ -1,0 +1,75 @@
+{
+ "backend": "codex",
+ "sec": 28.5,
+ "result": {
+  "target": "신청일 기준 19세 ~ 39세 청년(제대군인 의무복무 기간에 따라 최대 3년 연장)- 2026년 1월 1일 이전부터 신청일까지 계속하여 양천구에 주민등록상 주소지를 두고 있는 자- 신청일 현재 미취업자 및 사업자 등록사실이 없는 자- 당해 연도에 응시한 어학시험, 한국사시험, 국가자격시험, 국가공인자격시험 응시료 지원",
+  "content": "1인 최대 20만원 지원(실비 지원)- 신청 횟수 제한 없음",
+  "criteria": "신청일 기준 19세 ~ 39세 청년(제대군인 의무복무 기간에 따라 최대 3년 연장)- 2026년 1월 1일 이전부터 신청일까지 계속하여 양천구에 주민등록상 주소지를 두고 있는 자- 신청일 현재 미취업자 및 사업자 등록사실이 없는 자- 당해 연도에 응시한 어학시험, 한국사시험, 국가자격시험, 국가공인자격시험 응시료 지원",
+  "amount_won": 200000,
+  "cycle": "미상",
+  "region": "2026년 1월 1일 이전부터 신청일까지 계속하여 양천구에 주민등록상 주소지를 두고 있는 자",
+  "item": {
+   "id": "P",
+   "life": [
+    "청년"
+   ],
+   "age_min": 19,
+   "age_max": 39,
+   "age_evidence": "신청일 기준 19세 ~ 39세 청년",
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "양천구",
+   "region_evidence": "양천구에 주민등록상 주소지를 두고 있는 자",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "신청일 기준 19세 이상 39세 이하 청년",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 기준 19세 ~ 39세 청년"
+    },
+    {
+     "text": "제대군인은 의무복무 기간에 따라 연령 상한을 최대 3년 연장",
+     "join": "AND",
+     "exception": true,
+     "evidence": "제대군인 의무복무 기간에 따라 최대 3년 연장"
+    },
+    {
+     "text": "2026년 1월 1일 이전부터 신청일까지 계속 양천구에 주민등록상 주소지 유지",
+     "join": "AND",
+     "exception": false,
+     "evidence": "2026년 1월 1일 이전부터 신청일까지 계속하여 양천구에 주민등록상 주소지를 두고 있는 자"
+    },
+    {
+     "text": "신청일 현재 미취업자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 현재 미취업자"
+    },
+    {
+     "text": "신청일 현재 사업자 등록사실이 없는 자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 현재 미취업자 및 사업자 등록사실이 없는 자"
+    },
+    {
+     "text": "당해 연도에 어학시험, 한국사시험, 국가자격시험 또는 국가공인자격시험에 응시",
+     "join": "AND",
+     "exception": false,
+     "evidence": "당해 연도에 응시한 어학시험, 한국사시험, 국가자격시험, 국가공인자격시험 응시료 지원"
+    }
+   ],
+   "unknown_fields": [
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

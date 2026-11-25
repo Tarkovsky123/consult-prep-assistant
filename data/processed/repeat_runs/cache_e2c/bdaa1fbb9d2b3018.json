@@ -1,0 +1,71 @@
+{
+ "backend": "codex",
+ "sec": 26.9,
+ "result": {
+  "target": "강북구 관내 거주 고용보험 가입 배달플랫폼 종사자(음식배달기사, 퀵서비스기사)",
+  "content": "지원기간 동안 배달플랫폼 종사자가 납부한 고용보험료의 50% 지원(월 최대 15,000원까지 지원)",
+  "criteria": "강북구 관내 거주 고용보험 가입 배달플랫폼 종사자 중 신청자- 신청일 기준 주민등록상 강북구 주민이어야 함- 배달플랫폼 종사자여야 함(음식배달기사, 퀵서비스 기사)- 플랫폼종사자(노무제공자)로 고용보험 가입 및 부과내역이 있어야 함- 고용보험 다중취득인 경우, 플랫폼종사자로 취득한 고용보험만 지원",
+  "amount_won": 15000,
+  "cycle": "월",
+  "region": "강북구 관내 거주",
+  "item": {
+   "id": "P",
+   "life": [],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "강북구",
+   "region_evidence": "신청일 기준 주민등록상 강북구 주민이어야 함",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "지원 신청자여야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "강북구 관내 거주 고용보험 가입 배달플랫폼 종사자 중 신청자"
+    },
+    {
+     "text": "신청일 기준 주민등록상 강북구 주민이어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "신청일 기준 주민등록상 강북구 주민이어야 함"
+    },
+    {
+     "text": "음식배달기사 또는 퀵서비스 기사인 배달플랫폼 종사자여야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "배달플랫폼 종사자여야 함(음식배달기사, 퀵서비스 기사)"
+    },
+    {
+     "text": "플랫폼종사자(노무제공자)로 고용보험에 가입하고 부과내역이 있어야 함",
+     "join": "AND",
+     "exception": false,
+     "evidence": "플랫폼종사자(노무제공자)로 고용보험 가입 및 부과내역이 있어야 함"
+    },
+    {
+     "text": "고용보험 다중취득 시 플랫폼종사자로 취득한 고용보험만 지원",
+     "join": "AND",
+     "exception": true,
+     "evidence": "고용보험 다중취득인 경우, 플랫폼종사자로 취득한 고용보험만 지원"
+    }
+   ],
+   "unknown_fields": [
+    "life",
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

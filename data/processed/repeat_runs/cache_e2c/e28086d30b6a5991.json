@@ -1,0 +1,78 @@
+{
+ "backend": "codex",
+ "sec": 22.5,
+ "result": {
+  "target": "양산시 관내 거주 미취업 청년 중 부산, 울산, 경남 업체 면접 응시자",
+  "content": "양산사랑카드상품권으로 지급",
+  "criteria": "양산시 관내 거주 미취업 청년 중 부산, 울산, 경남 업체 면접 응시자근무조건 : 주 30시간 이상 근로자, 근무기간 3개월 이상 * 단순 아르바이트 제외",
+  "amount_won": null,
+  "cycle": "미상",
+  "region": "양산시 관내 거주",
+  "item": {
+   "id": "P",
+   "life": [
+    "청년"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "양산시",
+   "region_evidence": "양산시 관내 거주",
+   "support_form": [
+    "바우처·이용권"
+   ],
+   "conditions": [
+    {
+     "text": "양산시 관내 거주",
+     "join": "AND",
+     "exception": false,
+     "evidence": "양산시 관내 거주"
+    },
+    {
+     "text": "미취업 청년",
+     "join": "AND",
+     "exception": false,
+     "evidence": "미취업 청년"
+    },
+    {
+     "text": "부산, 울산, 경남 업체 면접 응시자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "부산, 울산, 경남 업체 면접 응시자"
+    },
+    {
+     "text": "주 30시간 이상 근로자",
+     "join": "AND",
+     "exception": false,
+     "evidence": "주 30시간 이상 근로자"
+    },
+    {
+     "text": "근무기간 3개월 이상",
+     "join": "AND",
+     "exception": false,
+     "evidence": "근무기간 3개월 이상"
+    },
+    {
+     "text": "단순 아르바이트 제외",
+     "join": "AND",
+     "exception": true,
+     "evidence": "단순 아르바이트 제외"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

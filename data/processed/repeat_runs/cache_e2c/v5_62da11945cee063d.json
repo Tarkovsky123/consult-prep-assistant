@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 10.9,
+ "result": {
+  "type_no": "49",
+  "type_reason": "난임부부에게 난임시술 회차별 교통비를 지원하므로, 난임부부를 대상에 포함하는 49번 임산부 교통비와 급여 항목이 같다.",
+  "type_evidence": "난임부부 교통비지원사업",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "남해군에 주민등록을 둔 난임부부(사실혼 포함)",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

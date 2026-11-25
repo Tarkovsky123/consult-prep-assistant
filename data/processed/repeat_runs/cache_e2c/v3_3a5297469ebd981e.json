@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 12.1,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 주택 리모델링 공사비 지원이며, 유형목록에 같은 급여 항목이 없다. 주거 분야의 대출이자·이사비·월세 지원 등과는 비용의 종류가 다르다.",
+  "type_evidence": "[지원내용] 리모델링 공사 비용의 50%, 최대 5백만원을 보조금으로 지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

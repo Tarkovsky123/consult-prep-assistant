@@ -1,0 +1,19 @@
+{
+ "backend": "codex",
+ "sec": 12.8,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "청소년 대상 바우처이지만 사용처와 지원 목적이 명시되지 않아 15번 교육·문화 바우처와 급여 항목이 같다고 판단할 수 없다. 대상과 금액만으로는 다른 유형도 확정할 수 없다.",
+  "type_evidence": "[지원내용] 초 3만원 중 5만원 고 7만원",
+  "alt_types": [
+   "15"
+  ],
+  "excluded": "아니오",
+  "exclude_clause": "제외 사유 미확정",
+  "exclude_evidence": null,
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

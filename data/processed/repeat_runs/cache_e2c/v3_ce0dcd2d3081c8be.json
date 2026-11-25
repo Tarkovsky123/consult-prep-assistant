@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 16.3,
+ "result": {
+  "type_no": "13",
+  "type_reason": "아이돌봄서비스 본인부담금을 추가 지원하는 사업으로 13번과 급여 항목이 같다.",
+  "type_evidence": "아이돌봄 서비스 본인부담금 추가지원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": "신속협의 유형 13번에 해당",
+  "exclude_evidence": "아이돌봄 서비스 본인부담금 추가지원",
+  "target_in": "밖",
+  "target_evidence": "[지원대상] 아이돌봄 서비스를 이용하는 가정",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "설명": "시제품 v3(E3 시연과 같은 인자)를 캐시 없이 다시 돌려 Codex CLI --json 이벤트의 usage를 모은 값. 비용 산정용(11/5 측정)",
+ "모델": "gpt-6.1-sol",
+ "추론_노력": "medium",
+ "사례": [
+  {
+   "case": "393",
+   "calls": [
+    {
+     "prompt_chars": 3279,
+     "usage": {
+      "input_tokens": 20849,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2813,
+      "reasoning_output_tokens": 170
+     }
+    },
+    {
+     "prompt_chars": 18448,
+     "usage": {
+      "input_tokens": 29427,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 471,
+      "reasoning_output_tokens": 206
+     }
+    },
+    {
+     "prompt_chars": 12802,
+     "usage": {
+      "input_tokens": 25211,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2740,
+      "reasoning_output_tokens": 196
+     }
+    }
+   ]
+  },
+  {
+   "case": "474",
+   "calls": [
+    {
+     "prompt_chars": 1425,
+     "usage": {
+      "input_tokens": 19649,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 617,
+      "reasoning_output_tokens": 145
+     }
+    },
+    {
+     "prompt_chars": 16601,
+     "usage": {
+      "input_tokens": 28229,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 283,
+      "reasoning_output_tokens": 65
+     }
+    },
+    {
+     "prompt_chars": 11305,
+     "usage": {
+      "input_tokens": 24107,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2606,
+      "reasoning_output_tokens": 271
+     }
+    }
+   ]
+  },
+  {
+   "case": "434",
+   "calls": [
+    {
+     "prompt_chars": 2296,
+     "usage": {
+      "input_tokens": 20217,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2087,
+      "reasoning_output_tokens": 158
+     }
+    },
+    {
+     "prompt_chars": 17459,
+     "usage": {
+      "input_tokens": 30044,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 259,
+      "reasoning_output_tokens": 73
+     }
+    },
+    {
+     "prompt_chars": 8674,
+     "usage": {
+      "input_tokens": 22506,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1963,
+      "reasoning_output_tokens": 389
+     }
+    }
+   ]
+  }
+ ],
+ "사례별_input_tokens": [
+  75487,
+  71985,
+  72767
+ ],
+ "사례별_output_tokens": [
+  6024,
+  3506,
+  4309
+ ],
+ "사례별_cached_input_tokens": [
+  0,
+  0,
+  0
+ ],
+ "사례별_호출수": [
+  3,
+  3,
+  3
+ ],
+ "단가_기준": "OpenAI API 표준 단가 gpt-6.1-sol: 100만 토큰당 입력 2.00달러, 출력 10.00달러(가격표 2026-11-05 저장)",
+ "사례별_비용_달러": [
+  0.2112,
+  0.179,
+  0.1886
+ ],
+ "사업안당_최대_비용_달러": 0.2112,
+ "시범_상한_86건_비용_달러": 18.16,
+ "시범_상한_86건_비용_10%할증_달러": 19.98,
+ "주의": "Codex CLI로 잰 값이라 CLI 기본 지시문(호출당 약 1.7만~2만 토큰)이 입력에 들어 있다. 캐시 입력 0. 사례 3건(393·474·434) 측정"
+}

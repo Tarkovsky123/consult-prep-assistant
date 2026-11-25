@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 17.8,
+ "result": {
+  "type_no": "해당없음",
+  "type_reason": "급여 항목은 종량제봉투 현물 무상지원으로, 유형목록에 같은 급여 항목이 없다. 다자녀 대상이라는 이유만으로 출산축하금·양육수당이나 출산·육아용품 유형에 해당하지 않는다.",
+  "type_evidence": "○ 일반용 종량제봉투 연 1회 무상 지급 (자녀수별 차등 지급)",
+  "alt_types": [],
+  "excluded": "예",
+  "exclude_clause": "일반행정·생활편의",
+  "exclude_evidence": "○ 일반용 종량제봉투 연 1회 무상 지급 (자녀수별 차등 지급)",
+  "target_in": null,
+  "target_evidence": null,
+  "dup_violation": null,
+  "dup_evidence": null
+ }
+}

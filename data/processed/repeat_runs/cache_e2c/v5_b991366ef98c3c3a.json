@@ -1,0 +1,18 @@
+{
+ "backend": "codex",
+ "sec": 13.2,
+ "result": {
+  "type_no": "6",
+  "type_reason": "셋째 이상 자녀에게 매월 양육비를 지급하므로 다자녀 양육수당인 6번과 급여 항목이 같다. 신속협의 유형에 해당하므로 협의대상이다.",
+  "type_evidence": "[지원내용] 월 10만원",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "안",
+  "target_evidence": "③ 만6세~만9세까지의 셋째이상(셋째,넷째,다섯째등의 자녀를 의미함)자녀",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null,
+  "type_match": "같음"
+ }
+}

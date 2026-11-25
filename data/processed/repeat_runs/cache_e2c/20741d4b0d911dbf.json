@@ -1,0 +1,60 @@
+{
+ "backend": "codex",
+ "sec": 16.8,
+ "result": {
+  "target": "남해군에 주민등록을 둔 난임부부(사실혼 포함)",
+  "content": "난임시술 1회차당 10만원(시술확인서 첨부)",
+  "criteria": "남해군에 주민등록을 둔 난임부부(사실혼 포함)",
+  "amount_won": 100000,
+  "cycle": "1회",
+  "region": "남해군에 주민등록을 둔",
+  "item": {
+   "id": "P",
+   "life": [
+    "임신·출산"
+   ],
+   "age_min": null,
+   "age_max": null,
+   "age_evidence": null,
+   "household": [],
+   "income_type": "미상",
+   "income_median_pct": null,
+   "income_evidence": null,
+   "region_type": "거주지한정",
+   "region_name": "남해군",
+   "region_evidence": "남해군에 주민등록을 둔",
+   "support_form": [
+    "현금"
+   ],
+   "conditions": [
+    {
+     "text": "남해군에 주민등록을 둔 사람",
+     "join": "AND",
+     "exception": false,
+     "evidence": "남해군에 주민등록을 둔"
+    },
+    {
+     "text": "난임부부(사실혼 포함)",
+     "join": "AND",
+     "exception": false,
+     "evidence": "난임부부(사실혼 포함)"
+    },
+    {
+     "text": "시술확인서 첨부",
+     "join": "AND",
+     "exception": false,
+     "evidence": "시술확인서 첨부"
+    }
+   ],
+   "unknown_fields": [
+    "age_min",
+    "age_max",
+    "age_evidence",
+    "household",
+    "income_type",
+    "income_median_pct",
+    "income_evidence"
+   ]
+  }
+ }
+}

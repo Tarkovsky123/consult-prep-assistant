@@ -1,0 +1,17 @@
+{
+ "backend": "codex",
+ "sec": 13.9,
+ "result": {
+  "type_no": "23",
+  "type_reason": "시험 응시를 위한 학원·직업능력개발시설 수강을 지원하므로 수강료를 포함하는 자격증 취득비 유형에 해당한다. 단기근로자도 신청할 수 있어 대상은 미취업 청년보다 넓다.",
+  "type_evidence": "※ 지원분야 시험을 응시하기 위한 학원* 및 직업능력개발시설**에서 수강한 경우로 한정",
+  "alt_types": [],
+  "excluded": "아니오",
+  "exclude_clause": null,
+  "exclude_evidence": null,
+  "target_in": "밖",
+  "target_evidence": "※ 단, 1년 이하 비정규직 단기근로자는 신청 가능(근로계약서 등 증빙 필요)",
+  "dup_violation": "언급 없음",
+  "dup_evidence": null
+ }
+}
